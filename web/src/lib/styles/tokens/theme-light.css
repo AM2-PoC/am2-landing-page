@@ -1,0 +1,48 @@
+/* ── Light theme ────────────────────────────────────────────────────────
+   Colours from the Figma mockup "Home (Light Mode - EN)": warm off-white pages,
+   warm dark text and the same AM² orange. Same token names as theme-dark.css,
+   so every component switches without its own colour rules.
+
+   Accessibility (WCAG AA, 4.5:1 for normal text) where the mockup is lighter:
+     --am2-on-accent   dark text on orange buttons/pills (5.3:1) instead of white (3.3:1)
+     --am2-accent-ink  darker orange for small orange text such as links (4.7:1)
+     --am2-accent-heading  orange heading words 2 % darker (3.0:1, the minimum for large text)
+     --am2-text-faint  footer copyright etc. (4.8:1) instead of 40 % (2.2:1) */
+
+[data-theme='light'] {
+	--am2-canvas: #f4f3ef;
+	--am2-canvas-raised: #f8f7f4;
+	--am2-canvas-deep: #f4f3ef;
+	--am2-chrome: #f4f3ef;
+	--am2-surface: #ebe9e3;
+	--am2-surface-subtle: rgb(48 45 39 / 0.03);
+	--am2-control: rgb(48 45 39 / 0.05);
+	--am2-control-hover: rgb(48 45 39 / 0.09);
+	--am2-border-subtle: rgb(48 45 39 / 0.08);
+	--am2-border: rgb(48 45 39 / 0.1);
+	--am2-border-chrome: rgb(48 45 39 / 0.1);
+	--am2-text-strong: #302d27;
+	--am2-text: #302d27;
+	--am2-text-secondary: #4b4842;
+	--am2-text-muted: #4b4842;
+	--am2-text-subtle: #4b4842;
+	--am2-text-tertiary: #4b4842;
+	--am2-text-faint: #6f6b64;
+	--am2-accent: #df6f27;
+	--am2-accent-hover: color-mix(in oklab, #df6f27 88%, #ffffff);
+	--am2-accent-soft: rgb(223 111 39 / 0.12);
+	--am2-accent-ink: #b3500f;
+	--am2-accent-heading: #db6d26;
+	--am2-on-accent: #1c1a16;
+	--am2-required: #b45309;
+	--am2-error: #b45309;
+	--am2-error-soft: rgb(180 83 9 / 0.1);
+	--am2-card-fade: #f4f3ef;
+	--am2-decor-line: rgb(48 45 39 / 0.12);
+	--am2-decor-accent: rgb(223 111 39 / 0.5);
+	/* Dark ink on the light page; a little stronger, because a 3 % shade reads weaker on a
+	   light background than a 3 % highlight on black */
+	--am2-silhouette: #302d27;
+	--am2-silhouette-strength: 1.5;
+	color-scheme: light;
+}

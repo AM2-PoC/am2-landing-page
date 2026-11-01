@@ -1,0 +1,19 @@
+# store text files with LF line endings
+* text=auto eol=lf
+
+# windows scripts keep CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.avif binary
+*.gif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+*.pdf binary
+*.zip binary

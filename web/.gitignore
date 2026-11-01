@@ -1,0 +1,26 @@
+# SvelteKit / Vite
+/.svelte-kit/
+/build/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Paraglide
+/src/lib/paraglide/
+/project.inlang/cache/
+
+# Test coverage
+/coverage/
+
+# Layout audit screenshots
+/layout-audit/
+
+# Playwright (E2E test results and reports)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Local environment (the repository root .gitignore has the same rule)
+.env
+.env.*
+!.env.example

@@ -1,0 +1,143 @@
+/* ── Reveal animation ───────────────────────────────────────────────────
+   Content rises a little and fades in the first time it comes into view.
+   One system for the whole site; components only mark what may move:
+
+     data-reveal              one element moves on its own
+     data-reveal-group        each child moves on its own (a child that is a group itself
+                              passes this on to its children); used on Section's container,
+                              intros, grids, lists and text columns
+     data-reveal-load         like a group, but the children move right after the page has
+                              loaded (pure CSS, no waiting for JavaScript): page heroes
+     data-reveal-role="media" optional: images and other supporting parts move after the text
+                              (img / picture / video / figure are detected automatically)
+     data-decor               decoration: fades only, never moves (keeps its own position)
+
+   utils/reveal.ts watches the marked elements (IntersectionObserver) and sets
+   data-reveal-state="in" (with a small --reveal-delay so neighbours follow each other)
+   and later "done", after which none of these rules apply any more.
+
+   Only opacity and translate change (no layout work, no layout shift). Nothing is hidden
+   with reduced motion, without JavaScript, or on paper. If the script fails to start,
+   everything still appears after 3 s (failsafe). */
+
+:root {
+	--reveal-ease: cubic-bezier(0.22, 1, 0.36, 1);
+	--reveal-duration: 600ms;
+	--reveal-duration-media: 700ms;
+	--reveal-duration-decor: 900ms;
+	--reveal-stagger: 70ms;
+	/* 12 px on phones → 20 px on desktop */
+	--reveal-distance: clamp(0.75rem, 0.5rem + 1vw, 1.25rem);
+}
+
+@media screen and (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+	/* Waiting to be revealed (anything holding keyboard focus is always shown) */
+	:is([data-reveal], [data-reveal-group] > :not([data-reveal-group], [data-reveal-load])):not(
+		[data-reveal-state],
+		:focus-within
+	) {
+		opacity: 0;
+	}
+
+	:is([data-reveal], [data-reveal-group] > :not([data-reveal-group], [data-reveal-load])):not(
+		[data-reveal-state],
+		:focus-within,
+		[data-decor]
+	) {
+		translate: 0 var(--reveal-distance);
+	}
+
+	/* Revealing: back to the element's own opacity and position */
+	[data-reveal-state='in'] {
+		transition:
+			opacity var(--reveal-duration) var(--reveal-ease) var(--reveal-delay, 0ms),
+			translate var(--reveal-duration) var(--reveal-ease) var(--reveal-delay, 0ms);
+	}
+
+	[data-reveal-state='in'][data-reveal-role='media'] {
+		--reveal-duration: var(--reveal-duration-media);
+	}
+
+	[data-reveal-state='in'][data-reveal-role='decor'] {
+		--reveal-duration: var(--reveal-duration-decor);
+	}
+
+	/* Failsafe: if the reveal script never starts (it marks <html data-reveal-ready>), show
+	   everything after 3 s instead of leaving it invisible */
+	:root:not([data-reveal-ready])
+		:is([data-reveal], [data-reveal-group] > :not([data-reveal-group], [data-reveal-load])):not(
+			[data-reveal-state]
+		) {
+		animation: reveal-failsafe var(--reveal-duration) var(--reveal-ease) 3s forwards;
+	}
+
+	:root:not([data-reveal-ready])
+		:is(
+			[data-reveal],
+			[data-reveal-group] > :not([data-reveal-group], [data-reveal-load])
+		)[data-decor]:not([data-reveal-state]) {
+		animation-name: reveal-failsafe-fade;
+	}
+}
+
+/* Page heroes: the children of a data-reveal-load group come in one after another as soon
+   as the page is shown. --reveal-load-start shifts a group behind an earlier one. */
+@media screen and (prefers-reduced-motion: no-preference) {
+	[data-reveal-load] > * {
+		animation: reveal-rise var(--reveal-duration) var(--reveal-ease) both;
+		animation-delay: calc(
+			80ms + (var(--reveal-load-start, 0) + var(--reveal-step, 0)) * var(--reveal-stagger)
+		);
+	}
+
+	[data-reveal-load] > :is([data-decor], img, picture, video, figure, [data-reveal-role='media']) {
+		animation-duration: var(--reveal-duration-media);
+	}
+
+	[data-reveal-load] > [data-decor] {
+		animation-name: reveal-fade;
+		animation-duration: var(--reveal-duration-decor);
+	}
+
+	[data-reveal-load] > :nth-child(2) {
+		--reveal-step: 1;
+	}
+
+	[data-reveal-load] > :nth-child(3) {
+		--reveal-step: 2;
+	}
+
+	[data-reveal-load] > :nth-child(4) {
+		--reveal-step: 3;
+	}
+
+	[data-reveal-load] > :nth-child(n + 5) {
+		--reveal-step: 4;
+	}
+}
+
+@keyframes reveal-rise {
+	from {
+		opacity: 0;
+		translate: 0 var(--reveal-distance);
+	}
+}
+
+@keyframes reveal-fade {
+	from {
+		opacity: 0;
+	}
+}
+
+@keyframes reveal-failsafe {
+	to {
+		opacity: 1;
+		translate: 0 0;
+	}
+}
+
+@keyframes reveal-failsafe-fade {
+	to {
+		opacity: 1;
+	}
+}

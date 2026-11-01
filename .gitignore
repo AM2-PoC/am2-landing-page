@@ -1,0 +1,42 @@
+# env
+.env
+.env.*
+!.env.example
+
+# dependencies
+node_modules/
+
+# logs & temp files
+*.log
+*.tmp
+
+# db
+*.backup
+*.dump
+
+# directus (cms)
+/cms/uploads/*
+!/cms/uploads/.gitkeep
+/cms/extensions/.registry/
+
+# os
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# editors
+**/.vscode/*
+!**/.vscode/extensions.json
+!**/.vscode/settings.json
+.idea/
+*.swp
+
+# playwright output
+/web/test-results/
+/web/playwright-report/
+
+.impeccable/
+.kiro/
+.vscode/

@@ -1,0 +1,212 @@
+/* ── Home hero intro ────────────────────────────────────────────────────
+   Figma prototype "ease out home" (Smart animate, ease-out, 0.8 s):
+     231:3907  empty hero
+     231:4279  heading centred on the first screen, device silhouettes around it
+     231:56    heading at the top, carousel dots and the dashboard image below it
+
+   1. On page load the heading and the silhouettes fade in (ease-out).
+   2. The first scroll gesture does not move the page (utils/reveal-on-scroll.ts holds it
+      on the hero) but sets data-hero-stage="revealed": the heading slides up into its
+      place, the silhouettes fade out and the dots and the dashboard image fade in.
+      The next scroll moves the page as usual.
+
+   The layout is the same in both stages (the final one); the intro only moves and hides
+   parts with translate / opacity. So nothing below the hero jumps when it plays and the
+   page has no layout shift (CLS). The intro is left out, and the final state shown
+   right away, when JavaScript is off, the visitor prefers reduced motion, in Windows
+   high-contrast mode and on paper.
+
+   Inputs on the section (.hero-home): --section-pad-top (top padding) and
+   --hero-media-ratio (height / width of the dashboard image). */
+
+.hero-home {
+	/* Visible part of the first screen: the viewport minus the sticky navbar (64 px + 1 px border) */
+	--hero-stage: calc(100svh - 4rem - 1px);
+}
+
+/* Silhouettes only exist in the intro */
+.hero-silhouettes {
+	display: none;
+}
+
+@media screen and (scripting: enabled) and (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+	/* The hero fills the first screen (as the 927 px Figma frame does). When its content is
+	   shorter (phones, tall monitors) the content sits in the middle, otherwise at the top. */
+	.hero-home[data-hero-stage] {
+		container-type: inline-size;
+		display: flex;
+		min-height: var(--hero-stage);
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	/* Heading + text. In the intro it is moved down to the middle of the first screen.
+	   Pure CSS, so it is right on the very first paint: 50 % in translate is half the
+	   block's own height, and --hero-after is everything below the block in the final
+	   layout (dots, gap, image; the image height follows from its width and ratio). */
+	.hero-home[data-hero-stage] [data-hero-part='copy'] {
+		--hero-media-width: min(100cqw - 2 * var(--spacing-gutter), 90rem, 150svh);
+		--hero-after: calc(
+			2.5rem + var(--spacing-intro) + var(--hero-media-width) * var(--hero-media-ratio, 0)
+		);
+		--hero-free: calc((var(--hero-stage) - var(--section-pad-top) - var(--hero-after)) / 2);
+		transition: translate 0.8s ease-out;
+		animation: hero-copy-in 0.8s ease-out 0.1s both;
+	}
+
+	.hero-home[data-hero-stage='intro'] [data-hero-part='copy'] {
+		translate: 0
+			max(
+				0px,
+				calc(
+					var(--hero-stage) / 2 - var(--section-pad-top) - max(0px, var(--hero-free) - 50%) - 50%
+				)
+			);
+	}
+
+	/* Carousel dots and dashboard image: hidden in the intro, fade (and rise) in afterwards */
+	.hero-home[data-hero-stage] :is([data-hero-part='dots'], [data-hero-part='media']) {
+		transition:
+			opacity 0.8s ease-out 0.15s,
+			translate 0.8s ease-out 0.15s;
+	}
+
+	.hero-home[data-hero-stage='intro'] [data-hero-part='dots'] {
+		opacity: 0;
+	}
+
+	.hero-home[data-hero-stage='intro'] [data-hero-part='media'] {
+		opacity: 0;
+		translate: 0 3rem;
+	}
+
+	/* The outline decoration of the final hero (SectionDecor) waits until the intro is over */
+	.hero-home[data-hero-stage] > .decor {
+		transition: opacity 0.8s ease-out 0.2s;
+	}
+
+	.hero-home[data-hero-stage='intro'] > .decor {
+		opacity: 0;
+	}
+
+	/* Silhouette layer: covers the first screen only, clipped at its edges.
+	   --hero-u is one Figma pixel: the frame (1549 × 927) scaled to the screen width or
+	   height, whichever is smaller; never below 0.36 (phones) or above 1.4 (4K). */
+	.hero-silhouettes {
+		position: absolute;
+		inset: 0 0 auto;
+		z-index: -1;
+		display: block;
+		height: var(--hero-stage);
+		overflow: hidden;
+		pointer-events: none;
+		user-select: none;
+		--hero-u: clamp(0.36px, min(100cqw / 1549, var(--hero-stage) / 927), 1.4px);
+		transition:
+			opacity 0.6s ease-out,
+			translate 0.8s ease-out,
+			visibility 0s linear 0.8s;
+	}
+
+	.hero-home[data-hero-stage='revealed'] > .hero-silhouettes {
+		visibility: hidden;
+		opacity: 0;
+		translate: 0 -3rem;
+	}
+
+	/* Each silhouette keeps its Figma distance to the nearer side and to the top or bottom */
+	.hero-silhouette {
+		position: absolute;
+		width: calc(var(--w) * var(--hero-u));
+		height: calc(var(--h) * var(--hero-u));
+		overflow: visible;
+		rotate: var(--r);
+		animation: hero-silhouette-in 0.8s ease-out both;
+		animation-delay: calc(var(--i) * 0.04s);
+	}
+
+	.hero-silhouette[data-side='left'] {
+		left: calc((var(--x) - var(--w) / 2) * var(--hero-u));
+	}
+
+	.hero-silhouette[data-side='right'] {
+		right: calc((var(--x) - var(--w) / 2) * var(--hero-u));
+	}
+
+	.hero-silhouette[data-anchor='top'] {
+		top: calc((var(--y) - var(--h) / 2) * var(--hero-u));
+	}
+
+	.hero-silhouette[data-anchor='bottom'] {
+		bottom: calc((var(--y) - var(--h) / 2) * var(--hero-u));
+	}
+
+	/* Phones: the text is nearly as wide as the screen, so a longer heading from the CMS could
+	   reach the silhouettes above or below it. A soft patch of page colour behind the text
+	   keeps it readable in any case (it sits above the silhouettes, below the text). */
+	@media (width < 48rem) {
+		.hero-home[data-hero-stage] [data-hero-part='copy'] {
+			position: relative;
+			isolation: isolate;
+		}
+
+		.hero-home[data-hero-stage] [data-hero-part='copy']::before {
+			content: '';
+			position: absolute;
+			inset: -2rem -1rem;
+			z-index: -1;
+			background: radial-gradient(closest-side, var(--color-canvas) 65%, transparent);
+			transition: opacity 0.6s ease-out;
+		}
+
+		/* Not needed once the silhouettes are gone */
+		.hero-home[data-hero-stage='revealed'] [data-hero-part='copy']::before {
+			opacity: 0;
+		}
+	}
+
+	/* Short screens (phones held sideways, very small phones): the text fills the first
+	   screen and there is no free space left for the silhouettes */
+	@media (height < 36rem) {
+		.hero-silhouettes {
+			display: none;
+		}
+	}
+}
+
+/* Colours: the Figma opacities (--a) on the theme's silhouette ink */
+.hero-silhouette [data-paint='ink'] {
+	fill: var(--am2-silhouette);
+	fill-opacity: calc(var(--a) * var(--am2-silhouette-strength));
+}
+
+.hero-silhouette [data-paint='ink'][data-outline] {
+	fill: none;
+	stroke: var(--am2-silhouette);
+	stroke-opacity: calc(var(--a) * var(--am2-silhouette-strength));
+	stroke-width: 1;
+	/* 1 px rims and lines at every size */
+	vector-effect: non-scaling-stroke;
+}
+
+.hero-silhouette [data-paint='accent'] {
+	fill: var(--am2-accent);
+}
+
+.hero-silhouette [data-paint='white'] {
+	fill: #ffffff;
+}
+
+@keyframes hero-copy-in {
+	from {
+		opacity: 0;
+		transform: translateY(1.25rem);
+	}
+}
+
+@keyframes hero-silhouette-in {
+	from {
+		opacity: 0;
+		scale: 0.92;
+	}
+}

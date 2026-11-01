@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- Last-resort error page: SvelteKit shows it only when even the normal error page can't be
+     rendered. Plain HTML without scripts; colours and fonts of the dark AM² theme. -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>%sveltekit.status% — AM²</title>
+		<style>
+			body {
+				margin: 0;
+				min-height: 100vh;
+				display: grid;
+				place-items: center;
+				padding: 1.5rem;
+				box-sizing: border-box;
+				background: #000;
+				color: #eff2ff;
+				font-family: system-ui, sans-serif;
+				text-align: center;
+			}
+			.logo {
+				color: #df6f27;
+				font:
+					500 1.5rem ui-monospace,
+					monospace;
+			}
+			h1 {
+				margin: 1.5rem 0 0.5rem;
+				font-size: 1.75rem;
+			}
+			p {
+				margin: 0.25rem 0;
+				color: #b6babe;
+			}
+			a {
+				display: inline-block;
+				margin-top: 1.5rem;
+				padding: 0.75rem 1.5rem;
+				border-radius: 999px;
+				background: #df6f27;
+				color: #06081a;
+				text-decoration: none;
+				font-weight: 600;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="logo">AM²</div>
+			<h1>Error %sveltekit.status%</h1>
+			<p>Something went wrong. Please try again in a moment.</p>
+			<p lang="id">Terjadi kendala. Silakan coba lagi sebentar lagi.</p>
+			<a href="/">Back to Home</a>
+		</main>
+	</body>
+</html>

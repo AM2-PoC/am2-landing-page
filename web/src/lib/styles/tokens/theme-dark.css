@@ -1,0 +1,43 @@
+:root,
+[data-theme='dark'] {
+	--am2-canvas: #000000;
+	--am2-canvas-raised: #121212;
+	--am2-canvas-deep: #090909;
+	--am2-chrome: #0c0d0e;
+	--am2-surface: #181a1c;
+	--am2-surface-subtle: rgb(255 255 255 / 0.02);
+	--am2-control: rgb(255 255 255 / 0.04);
+	--am2-control-hover: rgb(255 255 255 / 0.06);
+	--am2-border-subtle: rgb(255 255 255 / 0.06);
+	--am2-border: rgb(255 255 255 / 0.07);
+	--am2-border-chrome: rgb(182 186 190 / 0.1);
+	--am2-text-strong: #f0f1f2;
+	--am2-text: #eff2ff;
+	--am2-text-secondary: #d6d9dc;
+	--am2-text-muted: rgb(239 242 255 / 0.6);
+	--am2-text-subtle: #b6babe;
+	--am2-text-tertiary: #969ba0;
+	/* Footer copyright etc.: 50 % (4.9:1 on the footer, WCAG AA) instead of 32 % (2.7:1) */
+	--am2-text-faint: rgb(239 242 255 / 0.5);
+	--am2-accent: #df6f27;
+	--am2-accent-hover: color-mix(in oklab, #df6f27 88%, #f0f1f2);
+	--am2-accent-soft: rgb(223 111 39 / 0.12);
+	/* Accent for small text (links); same as the accent on the dark page */
+	--am2-accent-ink: #df6f27;
+	/* Accent for the highlighted words in headings */
+	--am2-accent-heading: #df6f27;
+	--am2-on-accent: #06081a;
+	--am2-required: #f0b429;
+	--am2-error: #f0b429;
+	--am2-error-soft: rgb(240 180 41 / 0.1);
+	/* Image cards fade into this colour behind their text */
+	--am2-card-fade: #000000;
+	/* Section decoration (styles/decor.css): outline strokes only, never fills */
+	--am2-decor-line: rgb(239 242 255 / 0.1);
+	--am2-decor-accent: rgb(223 111 39 / 0.42);
+	/* Device silhouettes of the Home hero intro (styles/hero-intro.css): ink colour and a
+	   multiplier for the very low opacities taken from the Figma frame */
+	--am2-silhouette: #ffffff;
+	--am2-silhouette-strength: 1;
+	color-scheme: dark;
+}

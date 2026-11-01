@@ -1,0 +1,94 @@
+/* Site container: up to 1280 px of content plus fluid side gutters, centred.
+   On phones with a notch the gutter never gets smaller than the safe area. */
+@utility container-site {
+	width: 100%;
+	max-width: calc(var(--container-site) + 2 * var(--spacing-gutter));
+	margin-inline: auto;
+	padding-inline: max(var(--spacing-gutter), env(safe-area-inset-left))
+		max(var(--spacing-gutter), env(safe-area-inset-right));
+}
+
+/* Vertical rhythm of a section (see the spacing tokens in tokens/tailwind.css).
+   The --section-pad-* copies tell the section decoration how much free space
+   there is above and below the content (styles/decor.css). */
+@utility section-y {
+	padding-block: var(--spacing-section);
+	--section-pad-top: var(--spacing-section);
+	--section-pad-bottom: var(--spacing-section);
+}
+
+@utility section-y-sm {
+	padding-block: var(--spacing-section-sm);
+	--section-pad-top: var(--spacing-section-sm);
+	--section-pad-bottom: var(--spacing-section-sm);
+}
+
+/* Horizontal scrollers (carousels) without a visible scrollbar */
+@utility no-scrollbar {
+	scrollbar-width: none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+/* Two neighbouring sections with the same background read as one surface:
+   the second one only needs a third of the usual top padding.
+   Kept outside @layer on purpose, so it wins over the section-y utility. */
+[data-section-tone='canvas'] + [data-section-tone='canvas'],
+[data-section-tone='raised'] + [data-section-tone='raised'],
+[data-section-tone='gradient'] + [data-section-tone='gradient'],
+[data-section-tone='chrome'] + [data-section-tone='chrome'] {
+	padding-top: calc(var(--spacing-section) / 3);
+	--section-pad-top: calc(var(--spacing-section) / 3);
+}
+
+/* Photo hero in the light theme: the photo fades out over the last --hero-fade of the
+   section, so the dark photo dissolves into the light page. The fade follows a smootherstep
+   curve (17 stops): a plain linear fade starts and stops abruptly, which the eye sees as a
+   band; this one eases in and out, so there is no visible edge where it begins or ends. */
+@utility hero-fade-mask {
+	--hero-fade: 12rem;
+	@media (width >= 64rem) {
+		--hero-fade: 18rem;
+	}
+	-webkit-mask-image: linear-gradient(
+		to bottom,
+		rgb(0 0 0 / 1) calc(100% - var(--hero-fade)),
+		rgb(0 0 0 / 0.998) calc(100% - var(--hero-fade) * 0.9375),
+		rgb(0 0 0 / 0.984) calc(100% - var(--hero-fade) * 0.875),
+		rgb(0 0 0 / 0.951) calc(100% - var(--hero-fade) * 0.8125),
+		rgb(0 0 0 / 0.896) calc(100% - var(--hero-fade) * 0.75),
+		rgb(0 0 0 / 0.82) calc(100% - var(--hero-fade) * 0.6875),
+		rgb(0 0 0 / 0.725) calc(100% - var(--hero-fade) * 0.625),
+		rgb(0 0 0 / 0.616) calc(100% - var(--hero-fade) * 0.5625),
+		rgb(0 0 0 / 0.5) calc(100% - var(--hero-fade) * 0.5),
+		rgb(0 0 0 / 0.384) calc(100% - var(--hero-fade) * 0.4375),
+		rgb(0 0 0 / 0.275) calc(100% - var(--hero-fade) * 0.375),
+		rgb(0 0 0 / 0.18) calc(100% - var(--hero-fade) * 0.3125),
+		rgb(0 0 0 / 0.104) calc(100% - var(--hero-fade) * 0.25),
+		rgb(0 0 0 / 0.049) calc(100% - var(--hero-fade) * 0.1875),
+		rgb(0 0 0 / 0.016) calc(100% - var(--hero-fade) * 0.125),
+		rgb(0 0 0 / 0.002) calc(100% - var(--hero-fade) * 0.0625),
+		rgb(0 0 0 / 0) 100%
+	);
+	mask-image: linear-gradient(
+		to bottom,
+		rgb(0 0 0 / 1) calc(100% - var(--hero-fade)),
+		rgb(0 0 0 / 0.998) calc(100% - var(--hero-fade) * 0.9375),
+		rgb(0 0 0 / 0.984) calc(100% - var(--hero-fade) * 0.875),
+		rgb(0 0 0 / 0.951) calc(100% - var(--hero-fade) * 0.8125),
+		rgb(0 0 0 / 0.896) calc(100% - var(--hero-fade) * 0.75),
+		rgb(0 0 0 / 0.82) calc(100% - var(--hero-fade) * 0.6875),
+		rgb(0 0 0 / 0.725) calc(100% - var(--hero-fade) * 0.625),
+		rgb(0 0 0 / 0.616) calc(100% - var(--hero-fade) * 0.5625),
+		rgb(0 0 0 / 0.5) calc(100% - var(--hero-fade) * 0.5),
+		rgb(0 0 0 / 0.384) calc(100% - var(--hero-fade) * 0.4375),
+		rgb(0 0 0 / 0.275) calc(100% - var(--hero-fade) * 0.375),
+		rgb(0 0 0 / 0.18) calc(100% - var(--hero-fade) * 0.3125),
+		rgb(0 0 0 / 0.104) calc(100% - var(--hero-fade) * 0.25),
+		rgb(0 0 0 / 0.049) calc(100% - var(--hero-fade) * 0.1875),
+		rgb(0 0 0 / 0.016) calc(100% - var(--hero-fade) * 0.125),
+		rgb(0 0 0 / 0.002) calc(100% - var(--hero-fade) * 0.0625),
+		rgb(0 0 0 / 0) 100%
+	);
+}

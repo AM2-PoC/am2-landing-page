@@ -1,0 +1,119 @@
+@theme inline {
+	--color-canvas: var(--am2-canvas);
+	--color-canvas-raised: var(--am2-canvas-raised);
+	--color-canvas-deep: var(--am2-canvas-deep);
+	--color-chrome: var(--am2-chrome);
+	--color-surface: var(--am2-surface);
+	--color-surface-subtle: var(--am2-surface-subtle);
+	--color-control: var(--am2-control);
+	--color-control-hover: var(--am2-control-hover);
+	--color-line-subtle: var(--am2-border-subtle);
+	--color-line: var(--am2-border);
+	--color-line-chrome: var(--am2-border-chrome);
+	--color-strong: var(--am2-text-strong);
+	--color-body: var(--am2-text);
+	--color-secondary: var(--am2-text-secondary);
+	--color-muted: var(--am2-text-muted);
+	--color-subtle: var(--am2-text-subtle);
+	--color-tertiary: var(--am2-text-tertiary);
+	--color-faint: var(--am2-text-faint);
+	--color-accent: var(--am2-accent);
+	--color-accent-hover: var(--am2-accent-hover);
+	--color-accent-soft: var(--am2-accent-soft);
+	--color-accent-ink: var(--am2-accent-ink);
+	--color-accent-heading: var(--am2-accent-heading);
+	--color-on-accent: var(--am2-on-accent);
+	--color-required: var(--am2-required);
+	--color-error: var(--am2-error);
+	--color-error-soft: var(--am2-error-soft);
+	--color-card-fade: var(--am2-card-fade);
+}
+
+/* light:… utilities apply only while the light theme is active (<html data-theme="light">),
+   and not inside a part that always stays dark (data-theme="dark", e.g. the photo hero) */
+@custom-variant light (&:where([data-theme='light'] *):not(:where([data-theme='dark'] *)));
+
+@theme {
+	--font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+	--font-mono: 'DM Mono', ui-monospace, monospace;
+	--text-logo: 1.125rem;
+	--text-logo--line-height: 1.6;
+	--text-logo--letter-spacing: 0.2em;
+	--text-logo--font-weight: 500;
+	--text-logo-sm: 1rem;
+	--text-logo-sm--line-height: 1.6;
+	--text-logo-sm--letter-spacing: 0.2em;
+	--text-logo-sm--font-weight: 500;
+	--text-small: 0.8125rem;
+	--text-small--line-height: 1.65;
+	--text-caption: 0.75rem;
+	--text-caption--line-height: 1.6;
+	--text-chip: 0.625rem;
+	--text-chip--line-height: 1.6;
+	--blur-navbar: 20px;
+	--text-display: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+	--text-display--line-height: 1.375;
+	--text-display--letter-spacing: -0.033em;
+	--text-display--font-weight: 700;
+	--text-h2: clamp(1.75rem, 1.3rem + 1.6vw, 2.5rem);
+	--text-h2--line-height: 1.344;
+	--text-h2--letter-spacing: -0.026em;
+	--text-h2--font-weight: 700;
+	--text-h3: 1.5rem;
+	--text-h3--line-height: 1.33;
+	--text-h3--letter-spacing: -0.02em;
+	--text-h3--font-weight: 700;
+	--text-h3-card: clamp(1.5rem, 1.1rem + 1.4vw, 2.1875rem);
+	--text-h3-card--line-height: 1.33;
+	--text-h3-card--letter-spacing: -0.027em;
+	--text-h3-card--font-weight: 700;
+	--text-h4: 1.25rem;
+	--text-h4--line-height: 1.4;
+	--text-h4--font-weight: 600;
+	--text-lead: 1.0625rem;
+	--text-lead--line-height: 1.65;
+	--text-body-strong: 1rem;
+	--text-body-strong--line-height: 1.4;
+	--text-body-strong--font-weight: 500;
+	--text-link: 0.9375rem;
+	--text-link--line-height: 1.39;
+	--text-link--font-weight: 600;
+	--text-button: 0.875rem;
+	--text-button--line-height: 1.6;
+	--text-button--font-weight: 700;
+	--text-nav: 0.8125rem;
+	--text-nav--line-height: 1.6;
+	--text-nav--letter-spacing: 0.01em;
+	--text-micro: 0.6875rem;
+	--text-micro--line-height: 1.69;
+	--text-eyebrow: 0.75rem;
+	--text-eyebrow--line-height: 1.33;
+	--text-eyebrow--letter-spacing: 0.1em;
+	--text-label: 0.625rem;
+	--text-label--line-height: 1.44;
+	--text-label--letter-spacing: 0.09em;
+	--text-overline: 0.5625rem;
+	--text-overline--line-height: 1.6;
+	--text-overline--letter-spacing: 0.12em;
+	--radius-card: 20px;
+	--radius-field: 12px;
+	--container-site: 80rem;
+
+	/* ── Layout spacing system ──────────────────────────────────────────
+	   Fluid values: they grow smoothly from a 360 px phone to a 1280 px desktop
+	   and stay fixed outside that range. Each token creates Tailwind utilities,
+	   e.g. px-gutter, py-section, mt-intro, gap-grid, gap-x-split.
+
+	   gutter      20 → 32 px   left/right padding of the page content
+	   section     64 → 120 px  top/bottom padding of a section
+	   section-sm  48 → 80 px   compact sections, space between stacked rows
+	   intro       40 → 64 px   section heading → section content
+	   grid        20 → 40 px   gap between cards
+	   split       40 → 80 px   gap between a text column and an image column */
+	--spacing-gutter: clamp(1.25rem, 0.957rem + 1.304vw, 2rem);
+	--spacing-section: clamp(4rem, 2.63rem + 6.087vw, 7.5rem);
+	--spacing-section-sm: clamp(3rem, 2.217rem + 3.478vw, 5rem);
+	--spacing-intro: clamp(2.5rem, 1.913rem + 2.609vw, 4rem);
+	--spacing-grid: clamp(1.25rem, 0.761rem + 2.174vw, 2.5rem);
+	--spacing-split: clamp(2.5rem, 1.326rem + 5.217vw, 5rem);
+}

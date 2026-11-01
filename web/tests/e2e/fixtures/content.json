@@ -1,0 +1,5417 @@
+{
+	"locales": [
+		{
+			"code": "en",
+			"name": "English",
+			"is_active": true,
+			"is_default": true
+		},
+		{
+			"code": "id",
+			"name": "Bahasa Indonesia",
+			"is_active": true,
+			"is_default": false
+		}
+	],
+	"pages": [
+		{
+			"id": 1,
+			"path": "/services/saas",
+			"template": "service",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": 1
+		},
+		{
+			"id": 2,
+			"path": "/services/on-premise",
+			"template": "service",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": 2
+		},
+		{
+			"id": 3,
+			"path": "/",
+			"template": "home",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 4,
+			"path": "/solutions/why-am2",
+			"template": "solution",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 5,
+			"path": "/contact-sales",
+			"template": "contact",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 6,
+			"path": "/about-us",
+			"template": "about",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 7,
+			"path": "/platforms/am2-command-center",
+			"template": "platform",
+			"platform_id": 2,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 8,
+			"path": "/products/am2-command-center",
+			"template": "product",
+			"platform_id": 2,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 9,
+			"path": "/features/am2-command-center-application",
+			"template": "feature",
+			"platform_id": 2,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 10,
+			"path": "/features/am2-command-center-webadmin",
+			"template": "feature",
+			"platform_id": 2,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 11,
+			"path": "/platforms/am2-ptt",
+			"template": "platform",
+			"platform_id": 1,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 12,
+			"path": "/products/am2-ptt",
+			"template": "product",
+			"platform_id": 1,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 13,
+			"path": "/features/am2-ptt-application",
+			"template": "feature",
+			"platform_id": 1,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 14,
+			"path": "/features/am2-ptt-webadmin",
+			"template": "feature",
+			"platform_id": 1,
+			"is_published": true,
+			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		}
+	],
+	"page_translations": [
+		{
+			"id": 1,
+			"title": "Managed SaaS | AM²",
+			"page_id": 1,
+			"locale_code": "en",
+			"meta_description": "AM² operates the platform infrastructure and updates. Your team manages users, devices, channels, and field connectivity."
+		},
+		{
+			"id": 2,
+			"title": "On-Premise Deployment | AM²",
+			"page_id": 2,
+			"locale_code": "en",
+			"meta_description": "Run AM² on infrastructure your organization controls, with software, implementation guidance, and updates from AM²."
+		},
+		{
+			"id": 3,
+			"title": "AM² | Push-to-Talk, Unit Location & Video for Field Teams",
+			"page_id": 3,
+			"locale_code": "en",
+			"meta_description": "Push-to-talk, latest unit locations, optional video, and central administration for field teams on Android. Available as Managed SaaS or On-Premise."
+		},
+		{
+			"id": 4,
+			"title": "Why AM² | Communication Built Around Your Operation",
+			"page_id": 4,
+			"locale_code": "en",
+			"meta_description": "See how AM² brings voice, unit visibility, administration, and flexible deployment together for teams spread across sites and shifts."
+		},
+		{
+			"id": 5,
+			"title": "Contact Sales | Plan Your AM² Deployment",
+			"page_id": 5,
+			"locale_code": "en",
+			"meta_description": "Tell the AM² team about your operating environment, unit count, and preferred deployment model to get a recommended setup."
+		},
+		{
+			"id": 6,
+			"title": "About AM² | Operational Communication for Field Teams",
+			"page_id": 6,
+			"locale_code": "en",
+			"meta_description": "AM² combines purpose-configured Android devices, two communication platforms, and flexible deployment for field teams."
+		},
+		{
+			"id": 7,
+			"title": "AM² Command Center | Visual Operations Platform",
+			"page_id": 7,
+			"locale_code": "en",
+			"meta_description": "Bring body-camera video and visual workflows into one command environment for supervisors and administrators."
+		},
+		{
+			"id": 8,
+			"title": "AM² Command Center Devices | Body Cameras",
+			"page_id": 8,
+			"locale_code": "en",
+			"meta_description": "Selected body-camera models configured for AM² Command Center and your operational requirements."
+		},
+		{
+			"id": 9,
+			"title": "AM² Command Center App Features | Visual Coordination",
+			"page_id": 9,
+			"locale_code": "en",
+			"meta_description": "One visual workspace where supervisors follow body-camera video, unit status, and location to coordinate field activity."
+		},
+		{
+			"id": 10,
+			"title": "AM² Command Center WebAdmin Features | Access Control",
+			"page_id": 10,
+			"locale_code": "en",
+			"meta_description": "Manage organizations, users, roles, body-camera assignments, and feature access for AM² Command Center."
+		},
+		{
+			"id": 11,
+			"title": "AM² PTT | Push-to-Talk Platform for Field Teams",
+			"page_id": 11,
+			"locale_code": "en",
+			"meta_description": "Channels, one-to-one voice, presence, latest unit locations, and optional video for field teams on Android devices."
+		},
+		{
+			"id": 12,
+			"title": "AM² PTT Devices | Android PoC Handhelds",
+			"page_id": 12,
+			"locale_code": "en",
+			"meta_description": "Compare HT PoC Voice + Maps and HT PoC Voice & Video + Maps, selected Android handhelds configured for AM² PTT."
+		},
+		{
+			"id": 13,
+			"title": "AM² PTT App Features | Android Push-to-Talk",
+			"page_id": 13,
+			"locale_code": "en",
+			"meta_description": "Channel push-to-talk, private voice and video, latest unit location, and presence in the AM² PTT app for Android."
+		},
+		{
+			"id": 14,
+			"title": "AM² PTT WebAdmin Features | Central Administration",
+			"page_id": 14,
+			"locale_code": "en",
+			"meta_description": "Manage organizations, users, channels, permissions, features, and device sessions for AM² PTT from one web console."
+		},
+		{
+			"id": 16,
+			"title": "AM² | Push-to-Talk, Lokasi Unit & Video untuk Tim Lapangan",
+			"page_id": 3,
+			"locale_code": "id",
+			"meta_description": "Push-to-talk, lokasi terakhir unit, video opsional, dan administrasi terpusat untuk tim lapangan di Android. Tersedia sebagai Managed SaaS atau On-Premise."
+		},
+		{
+			"id": 18,
+			"title": "Mengapa AM² | Komunikasi yang Mengikuti Operasi Anda",
+			"page_id": 4,
+			"locale_code": "id",
+			"meta_description": "Pelajari cara AM² menyatukan komunikasi suara, visibilitas unit, administrasi, dan deployment fleksibel untuk tim yang tersebar di banyak lokasi."
+		},
+		{
+			"id": 20,
+			"title": "AM² PTT | Platform Push-to-Talk untuk Tim Lapangan",
+			"page_id": 11,
+			"locale_code": "id",
+			"meta_description": "Channel, komunikasi satu-ke-satu, status online, lokasi terakhir unit, dan video opsional untuk tim lapangan di perangkat Android."
+		},
+		{
+			"id": 22,
+			"title": "AM² Command Center | Platform Operasi Visual",
+			"page_id": 7,
+			"locale_code": "id",
+			"meta_description": "Satukan video body camera dan alur kerja visual dalam satu pusat komando untuk supervisor dan administrator."
+		},
+		{
+			"id": 24,
+			"title": "Perangkat AM² PTT | HT Android PoC",
+			"page_id": 12,
+			"locale_code": "id",
+			"meta_description": "Bandingkan HT PoC Voice + Maps dan HT PoC Voice & Video + Maps, HT Android pilihan yang dikonfigurasi untuk AM² PTT."
+		},
+		{
+			"id": 26,
+			"title": "Perangkat AM² Command Center | Body Camera",
+			"page_id": 8,
+			"locale_code": "id",
+			"meta_description": "Model body camera pilihan yang dikonfigurasi untuk AM² Command Center sesuai kebutuhan operasional Anda."
+		},
+		{
+			"id": 28,
+			"title": "Managed SaaS | AM²",
+			"page_id": 1,
+			"locale_code": "id",
+			"meta_description": "AM² mengoperasikan infrastruktur platform dan pembaruannya. Tim Anda mengelola pengguna, perangkat, channel, dan konektivitas lapangan."
+		},
+		{
+			"id": 30,
+			"title": "Deployment On-Premise | AM²",
+			"page_id": 2,
+			"locale_code": "id",
+			"meta_description": "Jalankan AM² di infrastruktur yang dikendalikan organisasi Anda, dengan software, panduan implementasi, dan pembaruan dari AM²."
+		},
+		{
+			"id": 32,
+			"title": "Fitur Aplikasi AM² PTT | Push-to-Talk Android",
+			"page_id": 13,
+			"locale_code": "id",
+			"meta_description": "Push-to-talk via channel, suara dan video privat, lokasi terakhir unit, dan status kehadiran di aplikasi AM² PTT untuk Android."
+		},
+		{
+			"id": 34,
+			"title": "Fitur AM² PTT WebAdmin | Administrasi Terpusat",
+			"page_id": 14,
+			"locale_code": "id",
+			"meta_description": "Kelola organisasi, pengguna, channel, hak akses, fitur, dan sesi perangkat AM² PTT dari satu konsol web."
+		},
+		{
+			"id": 36,
+			"title": "Fitur Aplikasi AM² Command Center | Koordinasi Visual",
+			"page_id": 9,
+			"locale_code": "id",
+			"meta_description": "Satu ruang kerja visual bagi supervisor untuk memantau video body camera, status, dan lokasi unit saat mengoordinasikan aktivitas lapangan."
+		},
+		{
+			"id": 38,
+			"title": "Fitur AM² Command Center WebAdmin | Kontrol Akses",
+			"page_id": 10,
+			"locale_code": "id",
+			"meta_description": "Kelola organisasi, pengguna, peran, penetapan body camera, dan akses fitur untuk AM² Command Center."
+		},
+		{
+			"id": 40,
+			"title": "Hubungi Sales | Rencanakan Deployment AM²",
+			"page_id": 5,
+			"locale_code": "id",
+			"meta_description": "Ceritakan lingkungan operasional, jumlah unit, dan model deployment yang Anda inginkan kepada tim AM² untuk mendapatkan rekomendasi konfigurasi."
+		},
+		{
+			"id": 42,
+			"title": "Tentang AM² | Komunikasi Operasional untuk Tim Lapangan",
+			"page_id": 6,
+			"locale_code": "id",
+			"meta_description": "AM² memadukan perangkat Android yang dikonfigurasi khusus, dua platform komunikasi, dan deployment fleksibel untuk tim lapangan."
+		}
+	],
+	"navigation_items": [
+		{
+			"id": 1,
+			"page_id": 3,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 2,
+			"page_id": null,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "header"
+		},
+		{
+			"id": 3,
+			"page_id": 4,
+			"parent_id": 2,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 4,
+			"page_id": null,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"menu_location": "header"
+		},
+		{
+			"id": 5,
+			"page_id": null,
+			"parent_id": 4,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 6,
+			"page_id": 12,
+			"parent_id": 5,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 7,
+			"page_id": 8,
+			"parent_id": 5,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "header"
+		},
+		{
+			"id": 8,
+			"page_id": null,
+			"parent_id": 4,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "header"
+		},
+		{
+			"id": 9,
+			"page_id": 1,
+			"parent_id": 8,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 10,
+			"page_id": 2,
+			"parent_id": 8,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "header"
+		},
+		{
+			"id": 11,
+			"page_id": null,
+			"parent_id": 4,
+			"is_visible": true,
+			"sort_order": 30,
+			"menu_location": "header"
+		},
+		{
+			"id": 12,
+			"page_id": 11,
+			"parent_id": 11,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 13,
+			"page_id": 7,
+			"parent_id": 11,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "header"
+		},
+		{
+			"id": 14,
+			"page_id": null,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"menu_location": "header"
+		},
+		{
+			"id": 15,
+			"page_id": 13,
+			"parent_id": 14,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "header"
+		},
+		{
+			"id": 16,
+			"page_id": 14,
+			"parent_id": 14,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "header"
+		},
+		{
+			"id": 17,
+			"page_id": 9,
+			"parent_id": 14,
+			"is_visible": true,
+			"sort_order": 30,
+			"menu_location": "header"
+		},
+		{
+			"id": 18,
+			"page_id": 10,
+			"parent_id": 14,
+			"is_visible": true,
+			"sort_order": 40,
+			"menu_location": "header"
+		},
+		{
+			"id": 19,
+			"page_id": 5,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 70,
+			"menu_location": "header"
+		},
+		{
+			"id": 20,
+			"page_id": 6,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 80,
+			"menu_location": "header"
+		},
+		{
+			"id": 21,
+			"page_id": null,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "footer"
+		},
+		{
+			"id": 22,
+			"page_id": 4,
+			"parent_id": 21,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "footer"
+		},
+		{
+			"id": 23,
+			"page_id": null,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "footer"
+		},
+		{
+			"id": 24,
+			"page_id": 11,
+			"parent_id": 23,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "footer"
+		},
+		{
+			"id": 25,
+			"page_id": 12,
+			"parent_id": 23,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "footer"
+		},
+		{
+			"id": 26,
+			"page_id": 1,
+			"parent_id": 23,
+			"is_visible": true,
+			"sort_order": 30,
+			"menu_location": "footer"
+		},
+		{
+			"id": 27,
+			"page_id": null,
+			"parent_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"menu_location": "footer"
+		},
+		{
+			"id": 28,
+			"page_id": 13,
+			"parent_id": 27,
+			"is_visible": true,
+			"sort_order": 10,
+			"menu_location": "footer"
+		},
+		{
+			"id": 29,
+			"page_id": 14,
+			"parent_id": 27,
+			"is_visible": true,
+			"sort_order": 20,
+			"menu_location": "footer"
+		}
+	],
+	"navigation_item_translations": [
+		{
+			"id": 1,
+			"label": "Home",
+			"locale_code": "en",
+			"navigation_item_id": 1
+		},
+		{
+			"id": 2,
+			"label": "Solutions",
+			"locale_code": "en",
+			"navigation_item_id": 2
+		},
+		{
+			"id": 3,
+			"label": "Why AM²",
+			"locale_code": "en",
+			"navigation_item_id": 3
+		},
+		{
+			"id": 4,
+			"label": "Ecosystems",
+			"locale_code": "en",
+			"navigation_item_id": 4
+		},
+		{
+			"id": 5,
+			"label": "Products",
+			"locale_code": "en",
+			"navigation_item_id": 5
+		},
+		{
+			"id": 6,
+			"label": "AM² PTT Devices",
+			"locale_code": "en",
+			"navigation_item_id": 6
+		},
+		{
+			"id": 7,
+			"label": "AM² Command Center Devices",
+			"locale_code": "en",
+			"navigation_item_id": 7
+		},
+		{
+			"id": 8,
+			"label": "Services",
+			"locale_code": "en",
+			"navigation_item_id": 8
+		},
+		{
+			"id": 9,
+			"label": "Managed SaaS",
+			"locale_code": "en",
+			"navigation_item_id": 9
+		},
+		{
+			"id": 10,
+			"label": "On-Premise",
+			"locale_code": "en",
+			"navigation_item_id": 10
+		},
+		{
+			"id": 11,
+			"label": "Platforms",
+			"locale_code": "en",
+			"navigation_item_id": 11
+		},
+		{
+			"id": 12,
+			"label": "AM² PTT",
+			"locale_code": "en",
+			"navigation_item_id": 12
+		},
+		{
+			"id": 13,
+			"label": "AM² Command Center",
+			"locale_code": "en",
+			"navigation_item_id": 13
+		},
+		{
+			"id": 14,
+			"label": "Features",
+			"locale_code": "en",
+			"navigation_item_id": 14
+		},
+		{
+			"id": 15,
+			"label": "AM² PTT App",
+			"locale_code": "en",
+			"navigation_item_id": 15
+		},
+		{
+			"id": 16,
+			"label": "AM² PTT WebAdmin",
+			"locale_code": "en",
+			"navigation_item_id": 16
+		},
+		{
+			"id": 17,
+			"label": "AM² Command Center App",
+			"locale_code": "en",
+			"navigation_item_id": 17
+		},
+		{
+			"id": 18,
+			"label": "AM² Command Center WebAdmin",
+			"locale_code": "en",
+			"navigation_item_id": 18
+		},
+		{
+			"id": 19,
+			"label": "Contact Sales",
+			"locale_code": "en",
+			"navigation_item_id": 19
+		},
+		{
+			"id": 20,
+			"label": "About Us",
+			"locale_code": "en",
+			"navigation_item_id": 20
+		},
+		{
+			"id": 21,
+			"label": "Solutions",
+			"locale_code": "en",
+			"navigation_item_id": 21
+		},
+		{
+			"id": 22,
+			"label": "Why AM²",
+			"locale_code": "en",
+			"navigation_item_id": 22
+		},
+		{
+			"id": 23,
+			"label": "Ecosystems",
+			"locale_code": "en",
+			"navigation_item_id": 23
+		},
+		{
+			"id": 24,
+			"label": "Platforms",
+			"locale_code": "en",
+			"navigation_item_id": 24
+		},
+		{
+			"id": 25,
+			"label": "Products",
+			"locale_code": "en",
+			"navigation_item_id": 25
+		},
+		{
+			"id": 26,
+			"label": "Services",
+			"locale_code": "en",
+			"navigation_item_id": 26
+		},
+		{
+			"id": 27,
+			"label": "Features",
+			"locale_code": "en",
+			"navigation_item_id": 27
+		},
+		{
+			"id": 28,
+			"label": "PTT App",
+			"locale_code": "en",
+			"navigation_item_id": 28
+		},
+		{
+			"id": 29,
+			"label": "PTT WebAdmin",
+			"locale_code": "en",
+			"navigation_item_id": 29
+		},
+		{
+			"id": 31,
+			"label": "Beranda",
+			"locale_code": "id",
+			"navigation_item_id": 1
+		},
+		{
+			"id": 33,
+			"label": "Solusi",
+			"locale_code": "id",
+			"navigation_item_id": 2
+		},
+		{
+			"id": 35,
+			"label": "Mengapa AM²",
+			"locale_code": "id",
+			"navigation_item_id": 3
+		},
+		{
+			"id": 37,
+			"label": "Ekosistem",
+			"locale_code": "id",
+			"navigation_item_id": 4
+		},
+		{
+			"id": 39,
+			"label": "Produk",
+			"locale_code": "id",
+			"navigation_item_id": 5
+		},
+		{
+			"id": 41,
+			"label": "Perangkat AM² PTT",
+			"locale_code": "id",
+			"navigation_item_id": 6
+		},
+		{
+			"id": 43,
+			"label": "Perangkat AM² Command Center",
+			"locale_code": "id",
+			"navigation_item_id": 7
+		},
+		{
+			"id": 45,
+			"label": "Layanan",
+			"locale_code": "id",
+			"navigation_item_id": 8
+		},
+		{
+			"id": 47,
+			"label": "Managed SaaS",
+			"locale_code": "id",
+			"navigation_item_id": 9
+		},
+		{
+			"id": 49,
+			"label": "On-Premise",
+			"locale_code": "id",
+			"navigation_item_id": 10
+		},
+		{
+			"id": 51,
+			"label": "Platform",
+			"locale_code": "id",
+			"navigation_item_id": 11
+		},
+		{
+			"id": 53,
+			"label": "AM² PTT",
+			"locale_code": "id",
+			"navigation_item_id": 12
+		},
+		{
+			"id": 55,
+			"label": "AM² Command Center",
+			"locale_code": "id",
+			"navigation_item_id": 13
+		},
+		{
+			"id": 57,
+			"label": "Fitur",
+			"locale_code": "id",
+			"navigation_item_id": 14
+		},
+		{
+			"id": 59,
+			"label": "Aplikasi AM² PTT",
+			"locale_code": "id",
+			"navigation_item_id": 15
+		},
+		{
+			"id": 61,
+			"label": "AM² PTT WebAdmin",
+			"locale_code": "id",
+			"navigation_item_id": 16
+		},
+		{
+			"id": 63,
+			"label": "Aplikasi AM² Command Center",
+			"locale_code": "id",
+			"navigation_item_id": 17
+		},
+		{
+			"id": 65,
+			"label": "AM² Command Center WebAdmin",
+			"locale_code": "id",
+			"navigation_item_id": 18
+		},
+		{
+			"id": 67,
+			"label": "Hubungi Sales",
+			"locale_code": "id",
+			"navigation_item_id": 19
+		},
+		{
+			"id": 69,
+			"label": "Tentang Kami",
+			"locale_code": "id",
+			"navigation_item_id": 20
+		},
+		{
+			"id": 71,
+			"label": "Solusi",
+			"locale_code": "id",
+			"navigation_item_id": 21
+		},
+		{
+			"id": 73,
+			"label": "Mengapa AM²",
+			"locale_code": "id",
+			"navigation_item_id": 22
+		},
+		{
+			"id": 75,
+			"label": "Ekosistem",
+			"locale_code": "id",
+			"navigation_item_id": 23
+		},
+		{
+			"id": 77,
+			"label": "Platform",
+			"locale_code": "id",
+			"navigation_item_id": 24
+		},
+		{
+			"id": 79,
+			"label": "Produk",
+			"locale_code": "id",
+			"navigation_item_id": 25
+		},
+		{
+			"id": 81,
+			"label": "Layanan",
+			"locale_code": "id",
+			"navigation_item_id": 26
+		},
+		{
+			"id": 83,
+			"label": "Fitur",
+			"locale_code": "id",
+			"navigation_item_id": 27
+		},
+		{
+			"id": 85,
+			"label": "Aplikasi PTT",
+			"locale_code": "id",
+			"navigation_item_id": 28
+		},
+		{
+			"id": 87,
+			"label": "WebAdmin PTT",
+			"locale_code": "id",
+			"navigation_item_id": 29
+		}
+	],
+	"content_sections": [
+		{
+			"id": 1,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "site_footer",
+			"section_type": "footer"
+		},
+		{
+			"id": 2,
+			"image_id": null,
+			"cta_page_id": 5,
+			"section_key": "cta_configure_operation",
+			"section_type": "cta"
+		},
+		{
+			"id": 3,
+			"image_id": null,
+			"cta_page_id": 5,
+			"section_key": "cta_discuss_deployment",
+			"section_type": "cta"
+		},
+		{
+			"id": 4,
+			"image_id": null,
+			"cta_page_id": 5,
+			"section_key": "cta_fit_operation",
+			"section_type": "cta"
+		},
+		{
+			"id": 5,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "service_responsibility_matrix",
+			"section_type": "responsibility_matrix"
+		},
+		{
+			"id": 6,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "product_list",
+			"section_type": "product_list"
+		},
+		{
+			"id": 7,
+			"image_id": "00000000-0000-4000-8000-000000000027",
+			"cta_page_id": null,
+			"section_key": "home_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 8,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "home_outcomes",
+			"section_type": "icon_grid"
+		},
+		{
+			"id": 9,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "home_platforms",
+			"section_type": "card_grid"
+		},
+		{
+			"id": 10,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "home_operational_models",
+			"section_type": "icon_grid"
+		},
+		{
+			"id": 11,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "home_security_controls",
+			"section_type": "carousel"
+		},
+		{
+			"id": 12,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "home_industries",
+			"section_type": "card_grid"
+		},
+		{
+			"id": 13,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "home_faq",
+			"section_type": "accordion"
+		},
+		{
+			"id": 14,
+			"image_id": "00000000-0000-4000-8000-000000000028",
+			"cta_page_id": 4,
+			"section_key": "home_why_am2",
+			"section_type": "split_media"
+		},
+		{
+			"id": 15,
+			"image_id": "00000000-0000-4000-8000-000000000029",
+			"cta_page_id": null,
+			"section_key": "solutions_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 16,
+			"image_id": "00000000-0000-4000-8000-00000000002a",
+			"cta_page_id": null,
+			"section_key": "solutions_challenge",
+			"section_type": "split_media"
+		},
+		{
+			"id": 17,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "solutions_pillars",
+			"section_type": "icon_grid"
+		},
+		{
+			"id": 18,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "solutions_capabilities",
+			"section_type": "carousel"
+		},
+		{
+			"id": 19,
+			"image_id": "00000000-0000-4000-8000-00000000002b",
+			"cta_page_id": null,
+			"section_key": "platform_ptt_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 20,
+			"image_id": "00000000-0000-4000-8000-00000000002c",
+			"cta_page_id": null,
+			"section_key": "platform_ptt_capabilities",
+			"section_type": "split_list"
+		},
+		{
+			"id": 21,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "platform_ptt_benefits",
+			"section_type": "card_grid"
+		},
+		{
+			"id": 22,
+			"image_id": null,
+			"cta_page_id": 12,
+			"section_key": "platform_ptt_cta",
+			"section_type": "cta"
+		},
+		{
+			"id": 23,
+			"image_id": "00000000-0000-4000-8000-00000000002d",
+			"cta_page_id": null,
+			"section_key": "platform_cc_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 24,
+			"image_id": "00000000-0000-4000-8000-00000000002e",
+			"cta_page_id": null,
+			"section_key": "platform_cc_capabilities",
+			"section_type": "split_list"
+		},
+		{
+			"id": 25,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "platform_cc_benefits",
+			"section_type": "card_grid"
+		},
+		{
+			"id": 26,
+			"image_id": null,
+			"cta_page_id": 8,
+			"section_key": "platform_cc_cta",
+			"section_type": "cta"
+		},
+		{
+			"id": 27,
+			"image_id": "00000000-0000-4000-8000-00000000002f",
+			"cta_page_id": null,
+			"section_key": "product_ptt_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 28,
+			"image_id": "00000000-0000-4000-8000-000000000030",
+			"cta_page_id": null,
+			"section_key": "product_cc_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 29,
+			"image_id": "00000000-0000-4000-8000-000000000031",
+			"cta_page_id": null,
+			"section_key": "service_saas_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 30,
+			"image_id": "00000000-0000-4000-8000-000000000032",
+			"cta_page_id": null,
+			"section_key": "service_saas_how_it_works",
+			"section_type": "split_list"
+		},
+		{
+			"id": 31,
+			"image_id": "00000000-0000-4000-8000-000000000033",
+			"cta_page_id": null,
+			"section_key": "service_on_premise_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 32,
+			"image_id": "00000000-0000-4000-8000-000000000034",
+			"cta_page_id": null,
+			"section_key": "service_on_premise_how_it_works",
+			"section_type": "split_list"
+		},
+		{
+			"id": 33,
+			"image_id": "00000000-0000-4000-8000-000000000035",
+			"cta_page_id": null,
+			"section_key": "feature_ptt_app_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 34,
+			"image_id": "00000000-0000-4000-8000-000000000036",
+			"cta_page_id": null,
+			"section_key": "feature_ptt_app_list",
+			"section_type": "split_list"
+		},
+		{
+			"id": 35,
+			"image_id": "00000000-0000-4000-8000-000000000037",
+			"cta_page_id": null,
+			"section_key": "feature_ptt_webadmin_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 36,
+			"image_id": "00000000-0000-4000-8000-000000000038",
+			"cta_page_id": null,
+			"section_key": "feature_ptt_webadmin_list",
+			"section_type": "split_list"
+		},
+		{
+			"id": 37,
+			"image_id": "00000000-0000-4000-8000-000000000039",
+			"cta_page_id": null,
+			"section_key": "feature_cc_app_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 38,
+			"image_id": "00000000-0000-4000-8000-00000000003a",
+			"cta_page_id": null,
+			"section_key": "feature_cc_app_list",
+			"section_type": "split_list"
+		},
+		{
+			"id": 39,
+			"image_id": "00000000-0000-4000-8000-00000000003b",
+			"cta_page_id": null,
+			"section_key": "feature_cc_webadmin_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 40,
+			"image_id": "00000000-0000-4000-8000-00000000003c",
+			"cta_page_id": null,
+			"section_key": "feature_cc_webadmin_list",
+			"section_type": "split_list"
+		},
+		{
+			"id": 41,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "contact_sales_form",
+			"section_type": "contact_form"
+		},
+		{
+			"id": 42,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "about_hero",
+			"section_type": "hero"
+		},
+		{
+			"id": 43,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "about_what_we_do",
+			"section_type": "card_grid"
+		},
+		{
+			"id": 44,
+			"image_id": null,
+			"cta_page_id": null,
+			"section_key": "about_how_we_work",
+			"section_type": "process_steps"
+		}
+	],
+	"content_section_translations": [
+		{
+			"id": 1,
+			"body": "Push-to-talk, unit location, and central administration for field teams—as Managed SaaS or On-Premise.",
+			"eyebrow": null,
+			"heading": null,
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 1
+		},
+		{
+			"id": 2,
+			"body": "Tell us about your teams, sites, and preferred deployment. We'll recommend the devices and setup to start with.",
+			"eyebrow": null,
+			"heading": "Ready to Plan Your Rollout?",
+			"cta_label": "Contact Sales",
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 2
+		},
+		{
+			"id": 3,
+			"body": "Share your device count, sites, network setup, and preferred model. We'll outline the next steps.",
+			"eyebrow": null,
+			"heading": "Ready to Discuss Your Deployment?",
+			"cta_label": "Discuss Your Deployment",
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 3
+		},
+		{
+			"id": 4,
+			"body": "Tell us about your teams, devices, sites, and deployment preference. We'll shape a demo around them.",
+			"eyebrow": null,
+			"heading": "See How AM² Fits Your Operation",
+			"cta_label": "Book a Demo",
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 4
+		},
+		{
+			"id": 5,
+			"body": "See exactly what AM² handles and what stays with your team.",
+			"eyebrow": null,
+			"heading": "Clear Responsibilities.\nOne Operating Model.",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "One Operating Model.",
+			"content_section_id": 5
+		},
+		{
+			"id": 6,
+			"body": "Push-to-talk, latest unit locations, optional video, and one admin console for your Android devices—run by AM² or on your own servers.",
+			"eyebrow": null,
+			"heading": "Press Once,\nYour Team Hears You.",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Your Team Hears You.",
+			"content_section_id": 7
+		},
+		{
+			"id": 7,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Two Platforms,\nManaged from One Place",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Managed from One Place",
+			"content_section_id": 9
+		},
+		{
+			"id": 8,
+			"body": "Let AM² operate it as Managed SaaS, or run it on infrastructure your organization controls.",
+			"eyebrow": null,
+			"heading": "Choose Where Your Platform Runs",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 10
+		},
+		{
+			"id": 9,
+			"body": "Concrete controls on connections, device sessions, and administration—easy for your IT team to review.",
+			"eyebrow": null,
+			"heading": "Security, Spelled Out",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 10,
+			"body": "Configure AM² around the way your field teams already work, whatever the industry.",
+			"eyebrow": null,
+			"heading": "Built for Work Beyond the Desk",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Beyond the Desk",
+			"content_section_id": 12
+		},
+		{
+			"id": 11,
+			"body": null,
+			"eyebrow": "FAQ",
+			"heading": "Common Questions About AM²",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "AM²",
+			"content_section_id": 13
+		},
+		{
+			"id": 12,
+			"body": "Better field communication rarely comes from adding another app. It comes from tools that fit how your people already work.\n\nAM² brings devices, platforms, administration, and deployment together in one engagement—from choosing the right handhelds to configuring channels and training your team.",
+			"eyebrow": null,
+			"heading": "Why Choose AM²?",
+			"cta_label": "Explore Our Approach",
+			"locale_code": "en",
+			"heading_highlight": "AM²?",
+			"content_section_id": 14
+		},
+		{
+			"id": 13,
+			"body": "Voice, unit visibility, administration, and deployment in one solution for teams spread across sites, vehicles, and shifts.",
+			"eyebrow": null,
+			"heading": "Communication That Fits How You Work",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "How You Work",
+			"content_section_id": 15
+		},
+		{
+			"id": 14,
+			"body": "Calls go unanswered, updates arrive late, and nobody is sure which units are free. Supervisors juggle phones, chat groups, and spreadsheets just to know who is where—and every extra tool means another account to manage.",
+			"eyebrow": null,
+			"heading": "When Teams Spread Out, Coordination Breaks Down",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Coordination Breaks Down",
+			"content_section_id": 16
+		},
+		{
+			"id": 15,
+			"body": "AM² PTT and AM² Command Center bring voice, unit visibility, and administration together, so your teams spend less time chasing updates.",
+			"eyebrow": null,
+			"heading": "Two Platforms. One Way to Run the Field.",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "One Way to Run the Field.",
+			"content_section_id": 17
+		},
+		{
+			"id": 16,
+			"body": null,
+			"eyebrow": null,
+			"heading": "What You Get with AM²",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "AM²",
+			"content_section_id": 18
+		},
+		{
+			"id": 17,
+			"body": "AM² PTT connects field teams through channels, one-to-one voice, presence, and latest unit locations on Android devices.",
+			"eyebrow": null,
+			"heading": "Push-to-Talk for Teams on the Move",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Teams on the Move",
+			"content_section_id": 19
+		},
+		{
+			"id": 18,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Built for Field Coordination",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Field Coordination",
+			"content_section_id": 20
+		},
+		{
+			"id": 19,
+			"body": "Fewer calls to chase, clearer unit status, and visual context when a voice update isn't enough.",
+			"eyebrow": null,
+			"heading": "More Than Push-to-Talk",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Push-to-Talk",
+			"content_section_id": 21
+		},
+		{
+			"id": 20,
+			"body": "Compare voice-only and video-capable handhelds for your teams.",
+			"eyebrow": null,
+			"heading": "Find the Right AM² PTT Device",
+			"cta_label": "View AM² PTT Devices",
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 22
+		},
+		{
+			"id": 21,
+			"body": "AM² Command Center brings body-camera video and visual workflows into one place, so supervisors can follow field activity and coordinate a response.",
+			"eyebrow": null,
+			"heading": "See What Your Field Teams See",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Your Field Teams",
+			"content_section_id": 23
+		},
+		{
+			"id": 22,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Built for Visual Operations",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Visual Operations",
+			"content_section_id": 24
+		},
+		{
+			"id": 23,
+			"body": "Body cameras, unit status, and central administration work together, so decisions rest on what is actually happening.",
+			"eyebrow": null,
+			"heading": "Visual Context from the Field",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "from the Field",
+			"content_section_id": 25
+		},
+		{
+			"id": 24,
+			"body": "See the body-camera options available for AM² Command Center.",
+			"eyebrow": null,
+			"heading": "Choose Body Cameras for Your Team",
+			"cta_label": "View Command Center Devices",
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 26
+		},
+		{
+			"id": 25,
+			"body": "AM² PTT runs on selected Android handhelds from OEM partners. Final specifications depend on the model, your operational needs, and deployment size.",
+			"eyebrow": null,
+			"heading": "Choose the Handheld That Fits the Job",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Fits the Job",
+			"content_section_id": 27
+		},
+		{
+			"id": 26,
+			"body": "AM² Command Center works with selected body-camera models, configured for your operational requirements and deployment scope.",
+			"eyebrow": null,
+			"heading": "Body Cameras for Visual Operations",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Visual Operations",
+			"content_section_id": 28
+		},
+		{
+			"id": 27,
+			"body": "AM² operates the infrastructure and updates. Your team manages users, devices, channels, and field connectivity.",
+			"eyebrow": null,
+			"heading": "Run the Platform, Not the Servers",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Not the Servers",
+			"content_section_id": 29
+		},
+		{
+			"id": 28,
+			"body": null,
+			"eyebrow": null,
+			"heading": "How Managed SaaS Works",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Managed SaaS",
+			"content_section_id": 30
+		},
+		{
+			"id": 29,
+			"body": "Run AM² inside your own environment. After a technical assessment, your team operates the servers and network while AM² provides the software, guidance, and updates.",
+			"eyebrow": null,
+			"heading": "Your Infrastructure.\nYour Control.",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Your Control.",
+			"content_section_id": 31
+		},
+		{
+			"id": 30,
+			"body": null,
+			"eyebrow": null,
+			"heading": "How On-Premise Works",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "On-Premise",
+			"content_section_id": 32
+		},
+		{
+			"id": 31,
+			"body": "The AM² PTT app lets field teams talk on channels, reach individual units, and see the latest unit locations.",
+			"eyebrow": null,
+			"heading": "Field Communication, Built for Android",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Built for Android",
+			"content_section_id": 33
+		},
+		{
+			"id": 32,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Inside the AM² PTT App",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "AM² PTT App",
+			"content_section_id": 34
+		},
+		{
+			"id": 33,
+			"body": "AM² PTT WebAdmin gives administrators central control of users, channels, memberships, permissions, and device sessions.",
+			"eyebrow": null,
+			"heading": "Users, Channels, and Access in One Console",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "One Console",
+			"content_section_id": 35
+		},
+		{
+			"id": 34,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Inside AM² PTT WebAdmin",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "AM² PTT WebAdmin",
+			"content_section_id": 36
+		},
+		{
+			"id": 35,
+			"body": "AM² Command Center gives supervisors and administrators one visual workspace for their AM² body-camera deployments.",
+			"eyebrow": null,
+			"heading": "Visual Coordination for Body-Camera Teams",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Body-Camera Teams",
+			"content_section_id": 37
+		},
+		{
+			"id": 36,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Inside AM² Command Center",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "AM² Command Center",
+			"content_section_id": 38
+		},
+		{
+			"id": 37,
+			"body": "AM² Command Center WebAdmin centralizes organization, user, device, and access management for your deployment.",
+			"eyebrow": null,
+			"heading": "Controlled Access for Visual Operations",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Controlled Access",
+			"content_section_id": 39
+		},
+		{
+			"id": 38,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Inside Command Center WebAdmin",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Command Center WebAdmin",
+			"content_section_id": 40
+		},
+		{
+			"id": 39,
+			"body": "Tell us about your operating environment, unit count, and preferred deployment model. Our team will get back to you with a recommended setup.",
+			"eyebrow": "Discuss Your Requirements",
+			"heading": "Plan Your AM² Deployment",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Plan Your AM² Deployment",
+			"content_section_id": 41
+		},
+		{
+			"id": 40,
+			"body": "AM² builds operational communication for field teams. We combine purpose-configured Android devices, two communication platforms, and flexible deployment, so push-to-talk, unit location, optional video, and administration work as one system.",
+			"eyebrow": null,
+			"heading": "About AM²",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 42
+		},
+		{
+			"id": 41,
+			"body": "Devices, platforms, and deployment support, delivered as one solution.",
+			"eyebrow": null,
+			"heading": "What We Do",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 43
+		},
+		{
+			"id": 42,
+			"body": null,
+			"eyebrow": null,
+			"heading": "How We Work",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": null,
+			"content_section_id": 44
+		},
+		{
+			"id": 44,
+			"body": "Push-to-talk, lokasi unit, dan administrasi terpusat untuk tim lapangan—sebagai Managed SaaS atau On-Premise.",
+			"eyebrow": null,
+			"heading": null,
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 1
+		},
+		{
+			"id": 46,
+			"body": "Push-to-talk, lokasi terakhir unit, video opsional, dan satu konsol admin untuk perangkat Android Anda—dikelola AM² atau di server sendiri.",
+			"eyebrow": null,
+			"heading": "Sekali Tekan,\nTim Langsung Mendengar.",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Tim Langsung Mendengar.",
+			"content_section_id": 7
+		},
+		{
+			"id": 48,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Dua Platform,\nDikelola dari Satu Tempat",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Dikelola dari Satu Tempat",
+			"content_section_id": 9
+		},
+		{
+			"id": 50,
+			"body": "Serahkan pengoperasiannya kepada AM² lewat Managed SaaS, atau jalankan di infrastruktur yang dikendalikan organisasi Anda.",
+			"eyebrow": null,
+			"heading": "Pilih di Mana Platform Anda Berjalan",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 10
+		},
+		{
+			"id": 52,
+			"body": "Kontrol nyata pada koneksi, sesi perangkat, dan administrasi—mudah ditinjau oleh tim IT Anda.",
+			"eyebrow": null,
+			"heading": "Keamanan yang Dijelaskan, Bukan Sekadar Dijanjikan",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 54,
+			"body": "Sesuaikan AM² dengan cara kerja tim lapangan Anda, apa pun industrinya.",
+			"eyebrow": null,
+			"heading": "Dirancang untuk Pekerjaan di Luar Kantor",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "di Luar Kantor",
+			"content_section_id": 12
+		},
+		{
+			"id": 56,
+			"body": null,
+			"eyebrow": "FAQ",
+			"heading": "Pertanyaan Seputar AM²",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "AM²",
+			"content_section_id": 13
+		},
+		{
+			"id": 58,
+			"body": "Komunikasi lapangan yang lebih baik jarang lahir dari menambah aplikasi baru. Hasilnya justru datang dari alat yang sesuai dengan cara kerja tim Anda.\n\nAM² menyatukan perangkat, platform, administrasi, dan deployment dalam satu kerja sama—mulai dari memilih HT yang tepat, mengatur channel, hingga melatih tim Anda.",
+			"eyebrow": null,
+			"heading": "Mengapa Memilih AM²?",
+			"cta_label": "Pelajari Pendekatan Kami",
+			"locale_code": "id",
+			"heading_highlight": "AM²?",
+			"content_section_id": 14
+		},
+		{
+			"id": 60,
+			"body": "Ceritakan tim, lokasi kerja, dan model deployment yang Anda inginkan. Kami akan merekomendasikan perangkat dan konfigurasi awal yang tepat.",
+			"eyebrow": null,
+			"heading": "Siap Merencanakan Implementasi?",
+			"cta_label": "Hubungi Sales",
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 2
+		},
+		{
+			"id": 62,
+			"body": "Suara, visibilitas unit, administrasi, dan deployment dalam satu solusi untuk tim yang tersebar di berbagai lokasi, kendaraan, dan shift.",
+			"eyebrow": null,
+			"heading": "Komunikasi yang Mengikuti Cara Kerja Anda",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Cara Kerja Anda",
+			"content_section_id": 15
+		},
+		{
+			"id": 64,
+			"body": "Telepon tidak diangkat, laporan datang terlambat, dan tidak ada yang tahu unit mana yang sedang kosong. Supervisor berpindah dari telepon ke grup chat dan spreadsheet hanya untuk tahu siapa berada di mana—dan setiap alat tambahan menambah akun yang harus dikelola.",
+			"eyebrow": null,
+			"heading": "Saat Tim Tersebar, Koordinasi Mudah Tersendat",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Koordinasi Mudah Tersendat",
+			"content_section_id": 16
+		},
+		{
+			"id": 66,
+			"body": "AM² PTT dan AM² Command Center menyatukan komunikasi suara, visibilitas unit, dan administrasi, sehingga tim Anda tidak lagi sibuk mengejar kabar terbaru.",
+			"eyebrow": null,
+			"heading": "Dua Platform. Satu Cara Mengelola Lapangan.",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Satu Cara Mengelola Lapangan.",
+			"content_section_id": 17
+		},
+		{
+			"id": 68,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Yang Anda Dapatkan dari AM²",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "AM²",
+			"content_section_id": 18
+		},
+		{
+			"id": 70,
+			"body": "AM² PTT menghubungkan tim lapangan lewat channel, komunikasi satu-ke-satu, status online, dan lokasi terakhir unit di perangkat Android.",
+			"eyebrow": null,
+			"heading": "Push-to-Talk untuk Tim yang Terus Bergerak",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Tim yang Terus Bergerak",
+			"content_section_id": 19
+		},
+		{
+			"id": 72,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Dirancang untuk Koordinasi Lapangan",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Koordinasi Lapangan",
+			"content_section_id": 20
+		},
+		{
+			"id": 74,
+			"body": "Lebih sedikit telepon yang harus dikejar, status unit yang lebih jelas, dan konteks visual saat laporan suara belum cukup.",
+			"eyebrow": null,
+			"heading": "Lebih dari Sekadar Push-to-Talk",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Push-to-Talk",
+			"content_section_id": 21
+		},
+		{
+			"id": 76,
+			"body": "Bandingkan HT khusus suara dan HT dengan video untuk tim Anda.",
+			"eyebrow": null,
+			"heading": "Temukan Perangkat AM² PTT yang Tepat",
+			"cta_label": "Lihat Perangkat AM² PTT",
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 22
+		},
+		{
+			"id": 78,
+			"body": "AM² Command Center menyatukan video body camera dan alur kerja visual di satu tempat, agar supervisor bisa memantau aktivitas lapangan dan mengoordinasikan respons.",
+			"eyebrow": null,
+			"heading": "Lihat Apa yang Dilihat Tim Lapangan Anda",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Tim Lapangan Anda",
+			"content_section_id": 23
+		},
+		{
+			"id": 80,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Dirancang untuk Operasi Visual",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Operasi Visual",
+			"content_section_id": 24
+		},
+		{
+			"id": 82,
+			"body": "Body camera, status unit, dan administrasi terpusat bekerja bersama, sehingga keputusan diambil berdasarkan kondisi yang sebenarnya.",
+			"eyebrow": null,
+			"heading": "Konteks Visual Langsung dari Lapangan",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Langsung dari Lapangan",
+			"content_section_id": 25
+		},
+		{
+			"id": 84,
+			"body": "Lihat pilihan body camera yang tersedia untuk AM² Command Center.",
+			"eyebrow": null,
+			"heading": "Pilih Body Camera untuk Tim Anda",
+			"cta_label": "Lihat Perangkat Command Center",
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 26
+		},
+		{
+			"id": 86,
+			"body": "AM² PTT berjalan di HT Android pilihan dari mitra OEM. Spesifikasi akhir menyesuaikan model, kebutuhan operasional, dan skala deployment Anda.",
+			"eyebrow": null,
+			"heading": "Pilih HT yang Pas untuk Pekerjaan Anda",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Pas untuk Pekerjaan Anda",
+			"content_section_id": 27
+		},
+		{
+			"id": 88,
+			"body": "AM² Command Center mendukung model body camera pilihan yang dikonfigurasi sesuai kebutuhan operasional dan cakupan deployment Anda.",
+			"eyebrow": null,
+			"heading": "Body Camera untuk Operasi Visual",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Operasi Visual",
+			"content_section_id": 28
+		},
+		{
+			"id": 90,
+			"body": "AM² mengoperasikan infrastruktur dan pembaruannya. Tim Anda cukup mengelola pengguna, perangkat, channel, dan konektivitas lapangan.",
+			"eyebrow": null,
+			"heading": "Fokus pada Operasi, Bukan Server",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Bukan Server",
+			"content_section_id": 29
+		},
+		{
+			"id": 92,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Cara Kerja Managed SaaS",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Managed SaaS",
+			"content_section_id": 30
+		},
+		{
+			"id": 94,
+			"body": "Jalankan AM² di lingkungan IT Anda sendiri. Setelah asesmen teknis, tim Anda mengoperasikan server dan jaringan; AM² menyediakan software, panduan, dan pembaruan.",
+			"eyebrow": null,
+			"heading": "Infrastruktur Anda.\nKendali di Tangan Anda.",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Kendali di Tangan Anda.",
+			"content_section_id": 31
+		},
+		{
+			"id": 96,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Cara Kerja On-Premise",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "On-Premise",
+			"content_section_id": 32
+		},
+		{
+			"id": 98,
+			"body": "Lihat dengan jelas bagian yang ditangani AM² dan bagian yang tetap dikelola tim Anda.",
+			"eyebrow": null,
+			"heading": "Tanggung Jawab yang Jelas.\nSatu Model Operasional.",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Satu Model Operasional.",
+			"content_section_id": 5
+		},
+		{
+			"id": 100,
+			"body": "Sampaikan jumlah perangkat, lokasi, kondisi jaringan, dan model yang Anda inginkan. Kami akan menyusun langkah berikutnya.",
+			"eyebrow": null,
+			"heading": "Siap Membahas Deployment Anda?",
+			"cta_label": "Diskusikan Deployment",
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 3
+		},
+		{
+			"id": 102,
+			"body": "Aplikasi AM² PTT memudahkan tim lapangan berbicara lewat channel, menghubungi unit tertentu, dan melihat lokasi terakhir unit.",
+			"eyebrow": null,
+			"heading": "Komunikasi Lapangan Berbasis Android",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Berbasis Android",
+			"content_section_id": 33
+		},
+		{
+			"id": 104,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Di Dalam Aplikasi AM² PTT",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Aplikasi AM² PTT",
+			"content_section_id": 34
+		},
+		{
+			"id": 106,
+			"body": "AM² PTT WebAdmin memberi administrator kendali terpusat atas pengguna, channel, keanggotaan, hak akses, dan sesi perangkat.",
+			"eyebrow": null,
+			"heading": "Pengguna, Channel, dan Akses di Satu Konsol",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Satu Konsol",
+			"content_section_id": 35
+		},
+		{
+			"id": 108,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Di Dalam AM² PTT WebAdmin",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "AM² PTT WebAdmin",
+			"content_section_id": 36
+		},
+		{
+			"id": 110,
+			"body": "AM² Command Center memberi supervisor dan administrator satu ruang kerja visual untuk deployment body camera AM².",
+			"eyebrow": null,
+			"heading": "Koordinasi Visual untuk Tim Body Camera",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Tim Body Camera",
+			"content_section_id": 37
+		},
+		{
+			"id": 112,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Di Dalam AM² Command Center",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "AM² Command Center",
+			"content_section_id": 38
+		},
+		{
+			"id": 114,
+			"body": "AM² Command Center WebAdmin memusatkan pengelolaan organisasi, pengguna, perangkat, dan akses untuk deployment Anda.",
+			"eyebrow": null,
+			"heading": "Akses Terkendali untuk Operasi Visual",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Akses Terkendali",
+			"content_section_id": 39
+		},
+		{
+			"id": 116,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Di Dalam Command Center WebAdmin",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Command Center WebAdmin",
+			"content_section_id": 40
+		},
+		{
+			"id": 118,
+			"body": "Ceritakan tim, perangkat, lokasi kerja, dan model deployment yang Anda inginkan. Kami akan menyiapkan demo yang sesuai dengan kebutuhan tersebut.",
+			"eyebrow": null,
+			"heading": "Cari Tahu Apakah AM² Cocok untuk Tim Anda",
+			"cta_label": "Jadwalkan Demo",
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 4
+		},
+		{
+			"id": 120,
+			"body": "Ceritakan lingkungan operasional, jumlah unit, dan model deployment yang Anda inginkan. Tim kami akan menghubungi Anda dengan rekomendasi konfigurasi.",
+			"eyebrow": "Diskusikan Kebutuhan Anda",
+			"heading": "Rencanakan Deployment AM² Anda",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Rencanakan Deployment AM² Anda",
+			"content_section_id": 41
+		},
+		{
+			"id": 122,
+			"body": "AM² menghadirkan komunikasi operasional untuk tim lapangan. Kami memadukan perangkat Android yang dikonfigurasi khusus, dua platform komunikasi, dan deployment yang fleksibel, sehingga push-to-talk, lokasi unit, video opsional, dan administrasi bekerja sebagai satu sistem.",
+			"eyebrow": null,
+			"heading": "Tentang AM²",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 42
+		},
+		{
+			"id": 124,
+			"body": "Perangkat, platform, dan dukungan deployment dalam satu solusi.",
+			"eyebrow": null,
+			"heading": "Apa yang Kami Kerjakan",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 43
+		},
+		{
+			"id": 126,
+			"body": null,
+			"eyebrow": null,
+			"heading": "Cara Kami Bekerja",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": null,
+			"content_section_id": 44
+		}
+	],
+	"page_content_sections": [
+		{
+			"id": 1,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 7
+		},
+		{
+			"id": 2,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 8
+		},
+		{
+			"id": 3,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 9
+		},
+		{
+			"id": 4,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 10
+		},
+		{
+			"id": 5,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 50,
+			"content_section_id": 11
+		},
+		{
+			"id": 6,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 60,
+			"content_section_id": 12
+		},
+		{
+			"id": 7,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 70,
+			"content_section_id": 13
+		},
+		{
+			"id": 8,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 80,
+			"content_section_id": 14
+		},
+		{
+			"id": 9,
+			"page_id": 3,
+			"is_visible": true,
+			"sort_order": 90,
+			"content_section_id": 2
+		},
+		{
+			"id": 10,
+			"page_id": 4,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 15
+		},
+		{
+			"id": 11,
+			"page_id": 4,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 16
+		},
+		{
+			"id": 12,
+			"page_id": 4,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 17
+		},
+		{
+			"id": 13,
+			"page_id": 4,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 18
+		},
+		{
+			"id": 14,
+			"page_id": 4,
+			"is_visible": true,
+			"sort_order": 50,
+			"content_section_id": 2
+		},
+		{
+			"id": 15,
+			"page_id": 11,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 19
+		},
+		{
+			"id": 16,
+			"page_id": 11,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 20
+		},
+		{
+			"id": 17,
+			"page_id": 11,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 21
+		},
+		{
+			"id": 18,
+			"page_id": 11,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 22
+		},
+		{
+			"id": 19,
+			"page_id": 7,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 23
+		},
+		{
+			"id": 20,
+			"page_id": 7,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 24
+		},
+		{
+			"id": 21,
+			"page_id": 7,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 25
+		},
+		{
+			"id": 22,
+			"page_id": 7,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 26
+		},
+		{
+			"id": 23,
+			"page_id": 12,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 27
+		},
+		{
+			"id": 24,
+			"page_id": 12,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 6
+		},
+		{
+			"id": 25,
+			"page_id": 8,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 28
+		},
+		{
+			"id": 26,
+			"page_id": 8,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 6
+		},
+		{
+			"id": 27,
+			"page_id": 1,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 29
+		},
+		{
+			"id": 28,
+			"page_id": 1,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 30
+		},
+		{
+			"id": 29,
+			"page_id": 1,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 5
+		},
+		{
+			"id": 30,
+			"page_id": 1,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 3
+		},
+		{
+			"id": 31,
+			"page_id": 2,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 31
+		},
+		{
+			"id": 32,
+			"page_id": 2,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 32
+		},
+		{
+			"id": 33,
+			"page_id": 2,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 5
+		},
+		{
+			"id": 34,
+			"page_id": 2,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 3
+		},
+		{
+			"id": 35,
+			"page_id": 13,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 33
+		},
+		{
+			"id": 36,
+			"page_id": 13,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 34
+		},
+		{
+			"id": 37,
+			"page_id": 13,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 4
+		},
+		{
+			"id": 38,
+			"page_id": 14,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 35
+		},
+		{
+			"id": 39,
+			"page_id": 14,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 36
+		},
+		{
+			"id": 40,
+			"page_id": 14,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 4
+		},
+		{
+			"id": 41,
+			"page_id": 9,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 37
+		},
+		{
+			"id": 42,
+			"page_id": 9,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 38
+		},
+		{
+			"id": 43,
+			"page_id": 9,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 4
+		},
+		{
+			"id": 44,
+			"page_id": 10,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 39
+		},
+		{
+			"id": 45,
+			"page_id": 10,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 40
+		},
+		{
+			"id": 46,
+			"page_id": 10,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 4
+		},
+		{
+			"id": 47,
+			"page_id": 5,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 41
+		},
+		{
+			"id": 48,
+			"page_id": 6,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 42
+		},
+		{
+			"id": 49,
+			"page_id": 6,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 43
+		},
+		{
+			"id": 50,
+			"page_id": 6,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 44
+		},
+		{
+			"id": 51,
+			"page_id": 6,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 2
+		}
+	],
+	"section_items": [
+		{
+			"id": 1,
+			"icon_key": "radio-handheld",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 8
+		},
+		{
+			"id": 2,
+			"icon_key": "target",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 8
+		},
+		{
+			"id": 3,
+			"icon_key": "network",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 8
+		},
+		{
+			"id": 4,
+			"icon_key": "camera",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 8
+		},
+		{
+			"id": 5,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000001",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": 11,
+			"content_section_id": 9
+		},
+		{
+			"id": 6,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000002",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": 7,
+			"content_section_id": 9
+		},
+		{
+			"id": 7,
+			"icon_key": "cloud",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": 1,
+			"content_section_id": 10
+		},
+		{
+			"id": 8,
+			"icon_key": "server",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": 2,
+			"content_section_id": 10
+		},
+		{
+			"id": 9,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000003",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 10,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000004",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 11,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000005",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 12,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000006",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 12
+		},
+		{
+			"id": 13,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000007",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 12
+		},
+		{
+			"id": 14,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000008",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 12
+		},
+		{
+			"id": 15,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000009",
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 12
+		},
+		{
+			"id": 16,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000000a",
+			"is_visible": true,
+			"sort_order": 50,
+			"link_page_id": null,
+			"content_section_id": 12
+		},
+		{
+			"id": 17,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000000b",
+			"is_visible": true,
+			"sort_order": 60,
+			"link_page_id": null,
+			"content_section_id": 12
+		},
+		{
+			"id": 18,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 19,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 20,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 21,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 22,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 50,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 23,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 60,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 24,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 70,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 25,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 80,
+			"link_page_id": null,
+			"content_section_id": 13
+		},
+		{
+			"id": 26,
+			"icon_key": "radio-secure",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 17
+		},
+		{
+			"id": 27,
+			"icon_key": "eye-location",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 17
+		},
+		{
+			"id": 28,
+			"icon_key": "admin-console",
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 17
+		},
+		{
+			"id": 29,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000000c",
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 18
+		},
+		{
+			"id": 30,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 20
+		},
+		{
+			"id": 31,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 20
+		},
+		{
+			"id": 32,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 20
+		},
+		{
+			"id": 33,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000000d",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 21
+		},
+		{
+			"id": 34,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000000e",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 21
+		},
+		{
+			"id": 35,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000000f",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 21
+		},
+		{
+			"id": 36,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 24
+		},
+		{
+			"id": 37,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 24
+		},
+		{
+			"id": 38,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 24
+		},
+		{
+			"id": 39,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000010",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 25
+		},
+		{
+			"id": 40,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000011",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 25
+		},
+		{
+			"id": 41,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000012",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 25
+		},
+		{
+			"id": 42,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 30
+		},
+		{
+			"id": 43,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 30
+		},
+		{
+			"id": 44,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 30
+		},
+		{
+			"id": 45,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 32
+		},
+		{
+			"id": 46,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 32
+		},
+		{
+			"id": 47,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 32
+		},
+		{
+			"id": 48,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 49,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 50,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 51,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 52,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 53,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 54,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 55,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 56,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 38
+		},
+		{
+			"id": 57,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 38
+		},
+		{
+			"id": 58,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 38
+		},
+		{
+			"id": 59,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 38
+		},
+		{
+			"id": 60,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 40
+		},
+		{
+			"id": 61,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 40
+		},
+		{
+			"id": 62,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 40
+		},
+		{
+			"id": 63,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 40
+		},
+		{
+			"id": 64,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000013",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 42
+		},
+		{
+			"id": 65,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000014",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 42
+		},
+		{
+			"id": 66,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000015",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 43
+		},
+		{
+			"id": 67,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000016",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 43
+		},
+		{
+			"id": 68,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000017",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 43
+		},
+		{
+			"id": 69,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000018",
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 43
+		},
+		{
+			"id": 70,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000019",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 44
+		},
+		{
+			"id": 71,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000001a",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 44
+		},
+		{
+			"id": 72,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000001b",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 44
+		},
+		{
+			"id": 73,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000001c",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 18
+		},
+		{
+			"id": 74,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000001d",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 18
+		},
+		{
+			"id": 75,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000001e",
+			"is_visible": true,
+			"sort_order": 30,
+			"link_page_id": null,
+			"content_section_id": 18
+		},
+		{
+			"id": 76,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 50,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 77,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 60,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 78,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 70,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 79,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 80,
+			"link_page_id": null,
+			"content_section_id": 34
+		},
+		{
+			"id": 80,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 50,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 81,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 60,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 82,
+			"icon_key": null,
+			"image_id": null,
+			"is_visible": true,
+			"sort_order": 70,
+			"link_page_id": null,
+			"content_section_id": 36
+		},
+		{
+			"id": 83,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-00000000001f",
+			"is_visible": true,
+			"sort_order": 10,
+			"link_page_id": null,
+			"content_section_id": 7
+		},
+		{
+			"id": 84,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000020",
+			"is_visible": true,
+			"sort_order": 20,
+			"link_page_id": null,
+			"content_section_id": 7
+		},
+		{
+			"id": 85,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000021",
+			"is_visible": true,
+			"sort_order": 40,
+			"link_page_id": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 86,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000022",
+			"is_visible": true,
+			"sort_order": 50,
+			"link_page_id": null,
+			"content_section_id": 11
+		},
+		{
+			"id": 87,
+			"icon_key": null,
+			"image_id": "00000000-0000-4000-8000-000000000023",
+			"is_visible": true,
+			"sort_order": 60,
+			"link_page_id": null,
+			"content_section_id": 11
+		}
+	],
+	"section_item_translations": [
+		{
+			"id": 1,
+			"title": "Talk Without Dialing",
+			"link_label": null,
+			"description": "Press once to speak to a whole channel, or reach one unit privately.",
+			"locale_code": "en",
+			"section_item_id": 1
+		},
+		{
+			"id": 2,
+			"title": "Know Who's Available",
+			"link_label": null,
+			"description": "See which units are online, who is speaking, and where each unit was last reported.",
+			"locale_code": "en",
+			"section_item_id": 2
+		},
+		{
+			"id": 3,
+			"title": "Control Access Centrally",
+			"link_label": null,
+			"description": "Manage users, channels, permissions, and devices from one WebAdmin console.",
+			"locale_code": "en",
+			"section_item_id": 3
+		},
+		{
+			"id": 4,
+			"title": "Add Video When It Matters",
+			"link_label": null,
+			"description": "Switch to live video from video-enabled handhelds or body cameras when the situation needs eyes on it.",
+			"locale_code": "en",
+			"section_item_id": 4
+		},
+		{
+			"id": 5,
+			"title": "AM² PTT",
+			"link_label": "Explore AM² PTT",
+			"description": "Push-to-talk channels, one-to-one voice, latest unit locations, presence, and optional video for teams on the move.",
+			"locale_code": "en",
+			"section_item_id": 5
+		},
+		{
+			"id": 6,
+			"title": "AM² Command Center",
+			"link_label": "Explore AM² Command Center",
+			"description": "Body cameras and visual workflows in one command environment, so supervisors see what the field sees.",
+			"locale_code": "en",
+			"section_item_id": 6
+		},
+		{
+			"id": 7,
+			"title": "Managed SaaS",
+			"link_label": "Explore Managed SaaS",
+			"description": "AM² runs the servers and delivers software updates under your service agreement. Your team manages users, devices, and field connectivity.",
+			"locale_code": "en",
+			"section_item_id": 7
+		},
+		{
+			"id": 8,
+			"title": "On-Premise",
+			"link_label": "Explore On-Premise",
+			"description": "Run the platform on your own infrastructure. Your team controls servers, network, backup, and monitoring; AM² provides the software and updates.",
+			"locale_code": "en",
+			"section_item_id": 8
+		},
+		{
+			"id": 9,
+			"title": "TLS-Protected Connections",
+			"link_label": null,
+			"description": "App and admin traffic is encrypted in transit over HTTPS/WSS with TLS.",
+			"locale_code": "en",
+			"section_item_id": 9
+		},
+		{
+			"id": 10,
+			"title": "Revocable Device Sessions",
+			"link_label": null,
+			"description": "Revoke a device session or sign a unit out remotely the moment access should end.",
+			"locale_code": "en",
+			"section_item_id": 10
+		},
+		{
+			"id": 11,
+			"title": "Central Access Control",
+			"link_label": null,
+			"description": "Users, channels, memberships, and feature permissions are managed in one WebAdmin.",
+			"locale_code": "en",
+			"section_item_id": 11
+		},
+		{
+			"id": 12,
+			"title": "Logistics & Transportation",
+			"link_label": null,
+			"description": "Keep drivers, dispatchers, hubs, and supervisors on the same channel, with each unit's latest location in view.",
+			"locale_code": "en",
+			"section_item_id": 12
+		},
+		{
+			"id": 13,
+			"title": "Mining & Energy",
+			"link_label": null,
+			"description": "Connect crews across sites and work areas wherever suitable IP connectivity is available.",
+			"locale_code": "en",
+			"section_item_id": 13
+		},
+		{
+			"id": 14,
+			"title": "Construction",
+			"link_label": null,
+			"description": "Coordinate supervisors, operators, security, and project teams across every work zone.",
+			"locale_code": "en",
+			"section_item_id": 14
+		},
+		{
+			"id": 15,
+			"title": "Manufacturing & Warehousing",
+			"link_label": null,
+			"description": "Give production, warehouse, and maintenance teams their own channels for a faster response.",
+			"locale_code": "en",
+			"section_item_id": 15
+		},
+		{
+			"id": 16,
+			"title": "Security & Facilities",
+			"link_label": null,
+			"description": "Link officers, control rooms, and supervisors by voice and location, with video where the device supports it.",
+			"locale_code": "en",
+			"section_item_id": 16
+		},
+		{
+			"id": 17,
+			"title": "Government & Public Operations",
+			"link_label": null,
+			"description": "Coordinate field units with deployment options and access policies set to your organization's needs.",
+			"locale_code": "en",
+			"section_item_id": 17
+		},
+		{
+			"id": 18,
+			"title": "What is Push-to-Talk over Cellular (PoC)?",
+			"link_label": null,
+			"description": "It's walkie-talkie-style communication that runs over cellular data or Wi-Fi instead of a dedicated radio network. Press a button to talk to a channel or to one person, on compatible devices.",
+			"locale_code": "en",
+			"section_item_id": 18
+		},
+		{
+			"id": 19,
+			"title": "How is AM² PTT different from AM² Command Center?",
+			"link_label": null,
+			"description": "AM² PTT focuses on voice, location, and optional video through Android handhelds. AM² Command Center focuses on body cameras and visual workflows for supervisors. Both are administered through WebAdmin.",
+			"locale_code": "en",
+			"section_item_id": 19
+		},
+		{
+			"id": 20,
+			"title": "What is the difference between Managed SaaS and On-Premise?",
+			"link_label": null,
+			"description": "With Managed SaaS, AM² operates the platform infrastructure for you. With On-Premise, the platform runs on your infrastructure and your team operates it, while AM² provides the software, implementation guidance, and updates under your agreement.",
+			"locale_code": "en",
+			"section_item_id": 20
+		},
+		{
+			"id": 21,
+			"title": "Does AM² need a specific network?",
+			"link_label": null,
+			"description": "AM² needs compatible IP connectivity between devices and the platform, such as cellular data or Wi-Fi. Audio quality depends on coverage, bandwidth, latency, the device, and your network setup.",
+			"locale_code": "en",
+			"section_item_id": 21
+		},
+		{
+			"id": 22,
+			"title": "Does AM² manufacture its own devices?",
+			"link_label": null,
+			"description": "No. AM² uses selected white-label devices from OEM partners and configures them for the AM² platform. Specifications and certifications depend on the model you choose.",
+			"locale_code": "en",
+			"section_item_id": 22
+		},
+		{
+			"id": 23,
+			"title": "Is AM² communication encrypted?",
+			"link_label": null,
+			"description": "Connections between the apps and the platform use HTTPS/WSS with TLS, which protects data while it is in transit.",
+			"locale_code": "en",
+			"section_item_id": 23
+		},
+		{
+			"id": 24,
+			"title": "How is AM² priced?",
+			"link_label": null,
+			"description": "Pricing depends on device type and quantity, active users or capacity, features, deployment model, implementation, and support. Contact our team for a proposal based on your requirements.",
+			"locale_code": "en",
+			"section_item_id": 24
+		},
+		{
+			"id": 25,
+			"title": "How can I evaluate AM²?",
+			"link_label": null,
+			"description": "Book a technical demo and tell us your expected unit count, operating locations, network environment, and preference for Managed SaaS or On-Premise.",
+			"locale_code": "en",
+			"section_item_id": 25
+		},
+		{
+			"id": 26,
+			"title": "Communication",
+			"link_label": null,
+			"description": "Reach a whole channel or a single unit with one press.",
+			"locale_code": "en",
+			"section_item_id": 26
+		},
+		{
+			"id": 27,
+			"title": "Visibility",
+			"link_label": null,
+			"description": "See who is online, who is speaking, and each unit's latest available location.",
+			"locale_code": "en",
+			"section_item_id": 27
+		},
+		{
+			"id": 28,
+			"title": "Control",
+			"link_label": null,
+			"description": "Manage users, channels, permissions, and device sessions from WebAdmin.",
+			"locale_code": "en",
+			"section_item_id": 28
+		},
+		{
+			"id": 29,
+			"title": "Flexible Deployment",
+			"link_label": null,
+			"description": "Choose Managed SaaS operated by AM², or an On-Premise deployment operated by your own team.",
+			"locale_code": "en",
+			"section_item_id": 29
+		},
+		{
+			"id": 30,
+			"title": "Channels & One-to-One Talk",
+			"link_label": null,
+			"description": "Talk to a whole channel at once, or reach one person privately through the AM² relay.",
+			"locale_code": "en",
+			"section_item_id": 30
+		},
+		{
+			"id": 31,
+			"title": "Presence & Latest Location",
+			"link_label": null,
+			"description": "See who is online, who is speaking, and where each unit was last reported.",
+			"locale_code": "en",
+			"section_item_id": 31
+		},
+		{
+			"id": 32,
+			"title": "Optional Video",
+			"link_label": null,
+			"description": "Switch to live video when the device and platform setup support it.",
+			"locale_code": "en",
+			"section_item_id": 32
+		},
+		{
+			"id": 33,
+			"title": "Reach Teams Without Dialing",
+			"link_label": null,
+			"description": "Address a whole team on its channel, or one unit privately, with a single press.",
+			"locale_code": "en",
+			"section_item_id": 33
+		},
+		{
+			"id": 34,
+			"title": "See Which Units Are Active",
+			"link_label": null,
+			"description": "Online status, active speakers, and the latest available location in one view.",
+			"locale_code": "en",
+			"section_item_id": 34
+		},
+		{
+			"id": 35,
+			"title": "Add Visual Context When Needed",
+			"link_label": null,
+			"description": "Use video-enabled devices for jobs where seeing the situation speeds up the decision.",
+			"locale_code": "en",
+			"section_item_id": 35
+		},
+		{
+			"id": 36,
+			"title": "Body Camera Integration",
+			"link_label": null,
+			"description": "Connect selected body-camera devices to your operational workflows.",
+			"locale_code": "en",
+			"section_item_id": 36
+		},
+		{
+			"id": 37,
+			"title": "Visual Operational Workflow",
+			"link_label": null,
+			"description": "Bring field video and its operational context together in one command environment.",
+			"locale_code": "en",
+			"section_item_id": 37
+		},
+		{
+			"id": 38,
+			"title": "Supervisor & Administrator Workspace",
+			"link_label": null,
+			"description": "Give supervisors and administrators one workspace for monitoring and coordination.",
+			"locale_code": "en",
+			"section_item_id": 38
+		},
+		{
+			"id": 39,
+			"title": "Connect Field Devices",
+			"link_label": null,
+			"description": "Bring body-camera units into one central operating environment.",
+			"locale_code": "en",
+			"section_item_id": 39
+		},
+		{
+			"id": 40,
+			"title": "See Operational Context",
+			"link_label": null,
+			"description": "View available unit status, location, and video from the field.",
+			"locale_code": "en",
+			"section_item_id": 40
+		},
+		{
+			"id": 41,
+			"title": "Coordinate from One Place",
+			"link_label": null,
+			"description": "Supervisors and administrators manage visual workflows from a single workspace.",
+			"locale_code": "en",
+			"section_item_id": 41
+		},
+		{
+			"id": 42,
+			"title": "Platform Infrastructure",
+			"link_label": null,
+			"description": "AM² hosts and operates the platform servers, so your team has no servers to install or maintain.",
+			"locale_code": "en",
+			"section_item_id": 42
+		},
+		{
+			"id": 43,
+			"title": "Software & Updates",
+			"link_label": null,
+			"description": "AM² delivers software and product updates according to your service agreement.",
+			"locale_code": "en",
+			"section_item_id": 43
+		},
+		{
+			"id": 44,
+			"title": "Users, Devices & Operations",
+			"link_label": null,
+			"description": "Your administrators manage users, devices, and daily operations from WebAdmin.",
+			"locale_code": "en",
+			"section_item_id": 44
+		},
+		{
+			"id": 45,
+			"title": "Your Infrastructure",
+			"link_label": null,
+			"description": "The platform runs on servers, network, backup, and monitoring that your organization controls.",
+			"locale_code": "en",
+			"section_item_id": 45
+		},
+		{
+			"id": 46,
+			"title": "Software & Updates",
+			"link_label": null,
+			"description": "AM² provides the software, implementation guidance, and updates within the agreed scope.",
+			"locale_code": "en",
+			"section_item_id": 46
+		},
+		{
+			"id": 47,
+			"title": "Users, Devices & Operations",
+			"link_label": null,
+			"description": "Your team manages users, devices, and day-to-day operations.",
+			"locale_code": "en",
+			"section_item_id": 47
+		},
+		{
+			"id": 48,
+			"title": "Channel Push-to-Talk",
+			"link_label": null,
+			"description": "Talk on organization-defined channels, with clear transmit and active-speaker indicators.",
+			"locale_code": "en",
+			"section_item_id": 48
+		},
+		{
+			"id": 49,
+			"title": "Private Communication",
+			"link_label": null,
+			"description": "Reach one unit through a private voice or video session routed by the AM² platform.",
+			"locale_code": "en",
+			"section_item_id": 49
+		},
+		{
+			"id": 50,
+			"title": "Latest Unit Location",
+			"link_label": null,
+			"description": "See where online units were last reported, when device permissions and connectivity allow.",
+			"locale_code": "en",
+			"section_item_id": 50
+		},
+		{
+			"id": 51,
+			"title": "Presence",
+			"link_label": null,
+			"description": "Know who is online and who is speaking or streaming on each channel.",
+			"locale_code": "en",
+			"section_item_id": 51
+		},
+		{
+			"id": 52,
+			"title": "Organization & User Administration",
+			"link_label": null,
+			"description": "Manage organizations or tenant structures, administrators, and field users.",
+			"locale_code": "en",
+			"section_item_id": 52
+		},
+		{
+			"id": 53,
+			"title": "Channel Management",
+			"link_label": null,
+			"description": "Create channels, manage memberships, and set default channel assignments.",
+			"locale_code": "en",
+			"section_item_id": 53
+		},
+		{
+			"id": 54,
+			"title": "Access Policies",
+			"link_label": null,
+			"description": "Apply user, channel, and feature permissions that match each operational role.",
+			"locale_code": "en",
+			"section_item_id": 54
+		},
+		{
+			"id": 55,
+			"title": "Feature Configuration",
+			"link_label": null,
+			"description": "Turn supported features such as maps, video, and private communication on or off.",
+			"locale_code": "en",
+			"section_item_id": 55
+		},
+		{
+			"id": 56,
+			"title": "Visual Operations Workspace",
+			"link_label": null,
+			"description": "Follow live body-camera video and coordinate field activity from one screen.",
+			"locale_code": "en",
+			"section_item_id": 56
+		},
+		{
+			"id": 57,
+			"title": "Supervisor Access",
+			"link_label": null,
+			"description": "Assign role-based permissions that match each supervisor's and administrator's responsibilities.",
+			"locale_code": "en",
+			"section_item_id": 57
+		},
+		{
+			"id": 58,
+			"title": "Operational Context",
+			"link_label": null,
+			"description": "See video alongside unit status and location, so the team acts on the full picture.",
+			"locale_code": "en",
+			"section_item_id": 58
+		},
+		{
+			"id": 59,
+			"title": "Deployment Choice",
+			"link_label": null,
+			"description": "Run it as Managed SaaS or as a customer-operated On-Premise deployment.",
+			"locale_code": "en",
+			"section_item_id": 59
+		},
+		{
+			"id": 60,
+			"title": "Organization Management",
+			"link_label": null,
+			"description": "Set up organizational structures, tenant scopes, and administrative boundaries.",
+			"locale_code": "en",
+			"section_item_id": 60
+		},
+		{
+			"id": 61,
+			"title": "User & Access Control",
+			"link_label": null,
+			"description": "Assign roles and permissions based on operational responsibilities.",
+			"locale_code": "en",
+			"section_item_id": 61
+		},
+		{
+			"id": 62,
+			"title": "Device & Feature Management",
+			"link_label": null,
+			"description": "Assign body cameras to users and control which Command Center features they can use.",
+			"locale_code": "en",
+			"section_item_id": 62
+		},
+		{
+			"id": 63,
+			"title": "Deployment Administration",
+			"link_label": null,
+			"description": "Supports both Managed SaaS and customer-operated On-Premise deployments.",
+			"locale_code": "en",
+			"section_item_id": 63
+		},
+		{
+			"id": 64,
+			"title": "Field Communications",
+			"link_label": null,
+			"description": "Push-to-talk, private communication, latest unit location, optional video, and presence on mobile devices.",
+			"locale_code": "en",
+			"section_item_id": 66
+		},
+		{
+			"id": 65,
+			"title": "Operational Administration",
+			"link_label": null,
+			"description": "Central management of users, channels, access policies, feature permissions, and device sessions in WebAdmin.",
+			"locale_code": "en",
+			"section_item_id": 67
+		},
+		{
+			"id": 66,
+			"title": "Deployment",
+			"link_label": null,
+			"description": "Managed SaaS operated by AM², or On-Premise operated by your team.",
+			"locale_code": "en",
+			"section_item_id": 68
+		},
+		{
+			"id": 67,
+			"title": "Services",
+			"link_label": null,
+			"description": "Planning, configuration, device provisioning, training, updates, and support within the agreed scope.",
+			"locale_code": "en",
+			"section_item_id": 69
+		},
+		{
+			"id": 68,
+			"title": null,
+			"link_label": null,
+			"description": "We start with your operation: teams, sites, networks, workflows, and access needs. Then we define the devices, platform, and deployment that fit.",
+			"locale_code": "en",
+			"section_item_id": 70
+		},
+		{
+			"id": 69,
+			"title": null,
+			"link_label": null,
+			"description": "We configure the platform, users, channels, permissions, and devices, then onboard your administrators, supervisors, and field teams.",
+			"locale_code": "en",
+			"section_item_id": 71
+		},
+		{
+			"id": 70,
+			"title": null,
+			"link_label": null,
+			"description": "After go-live, we keep the platform current with software updates and ongoing support under your agreement.",
+			"locale_code": "en",
+			"section_item_id": 72
+		},
+		{
+			"id": 72,
+			"title": "Bicara Tanpa Menelepon",
+			"link_label": null,
+			"description": "Tekan sekali untuk bicara ke satu channel, atau hubungi satu unit secara privat.",
+			"locale_code": "id",
+			"section_item_id": 1
+		},
+		{
+			"id": 74,
+			"title": "Tahu Siapa yang Siaga",
+			"link_label": null,
+			"description": "Lihat unit yang online, siapa yang sedang bicara, dan lokasi terakhir setiap unit.",
+			"locale_code": "id",
+			"section_item_id": 2
+		},
+		{
+			"id": 76,
+			"title": "Atur Akses dari Satu Tempat",
+			"link_label": null,
+			"description": "Kelola pengguna, channel, hak akses, dan perangkat lewat satu konsol WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 3
+		},
+		{
+			"id": 78,
+			"title": "Tambahkan Video Saat Diperlukan",
+			"link_label": null,
+			"description": "Gunakan video langsung dari HT berkamera atau body camera saat kondisi di lapangan perlu dilihat.",
+			"locale_code": "id",
+			"section_item_id": 4
+		},
+		{
+			"id": 80,
+			"title": "AM² PTT",
+			"link_label": "Pelajari AM² PTT",
+			"description": "Channel push-to-talk, komunikasi satu-ke-satu, lokasi terakhir unit, status online, dan video opsional untuk tim yang terus bergerak.",
+			"locale_code": "id",
+			"section_item_id": 5
+		},
+		{
+			"id": 82,
+			"title": "AM² Command Center",
+			"link_label": "Pelajari AM² Command Center",
+			"description": "Body camera dan alur kerja visual dalam satu pusat komando, agar supervisor melihat apa yang dilihat tim di lapangan.",
+			"locale_code": "id",
+			"section_item_id": 6
+		},
+		{
+			"id": 84,
+			"title": "Managed SaaS",
+			"link_label": "Pelajari Managed SaaS",
+			"description": "AM² mengelola server dan pembaruan software sesuai perjanjian layanan. Tim Anda cukup mengatur pengguna, perangkat, dan konektivitas di lapangan.",
+			"locale_code": "id",
+			"section_item_id": 7
+		},
+		{
+			"id": 86,
+			"title": "On-Premise",
+			"link_label": "Pelajari On-Premise",
+			"description": "Jalankan platform di infrastruktur Anda sendiri. Tim Anda mengendalikan server, jaringan, backup, dan monitoring; AM² menyediakan software dan pembaruannya.",
+			"locale_code": "id",
+			"section_item_id": 8
+		},
+		{
+			"id": 88,
+			"title": "Koneksi Terlindungi TLS",
+			"link_label": null,
+			"description": "Lalu lintas aplikasi dan admin dienkripsi selama transit melalui HTTPS/WSS dengan TLS.",
+			"locale_code": "id",
+			"section_item_id": 9
+		},
+		{
+			"id": 90,
+			"title": "Sesi Perangkat yang Dapat Dicabut",
+			"link_label": null,
+			"description": "Cabut sesi perangkat atau keluarkan unit dari jarak jauh begitu aksesnya perlu dihentikan.",
+			"locale_code": "id",
+			"section_item_id": 10
+		},
+		{
+			"id": 92,
+			"title": "Kontrol Akses Terpusat",
+			"link_label": null,
+			"description": "Pengguna, channel, keanggotaan, dan izin fitur dikelola dalam satu WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 11
+		},
+		{
+			"id": 94,
+			"title": "Logistik & Transportasi",
+			"link_label": null,
+			"description": "Satukan pengemudi, dispatcher, hub, dan supervisor dalam satu channel, lengkap dengan lokasi terakhir setiap unit.",
+			"locale_code": "id",
+			"section_item_id": 12
+		},
+		{
+			"id": 96,
+			"title": "Pertambangan & Energi",
+			"link_label": null,
+			"description": "Hubungkan kru di berbagai site dan area kerja selama tersedia konektivitas IP yang memadai.",
+			"locale_code": "id",
+			"section_item_id": 13
+		},
+		{
+			"id": 98,
+			"title": "Konstruksi",
+			"link_label": null,
+			"description": "Koordinasikan supervisor, operator, petugas keamanan, dan tim proyek di setiap zona kerja.",
+			"locale_code": "id",
+			"section_item_id": 14
+		},
+		{
+			"id": 100,
+			"title": "Manufaktur & Pergudangan",
+			"link_label": null,
+			"description": "Beri tim produksi, gudang, dan maintenance channel masing-masing agar respons lebih cepat.",
+			"locale_code": "id",
+			"section_item_id": 15
+		},
+		{
+			"id": 102,
+			"title": "Keamanan & Fasilitas",
+			"link_label": null,
+			"description": "Hubungkan petugas, control room, dan supervisor lewat suara dan lokasi, plus video bila perangkat mendukung.",
+			"locale_code": "id",
+			"section_item_id": 16
+		},
+		{
+			"id": 104,
+			"title": "Pemerintahan & Layanan Publik",
+			"link_label": null,
+			"description": "Koordinasikan unit lapangan dengan pilihan deployment dan kebijakan akses yang disesuaikan dengan kebutuhan instansi Anda.",
+			"locale_code": "id",
+			"section_item_id": 17
+		},
+		{
+			"id": 106,
+			"title": "Apa itu Push-to-Talk over Cellular (PoC)?",
+			"link_label": null,
+			"description": "Komunikasi ala HT yang berjalan di jaringan data seluler atau Wi-Fi, bukan di jaringan radio khusus. Cukup tekan tombol untuk bicara ke satu channel atau satu orang, menggunakan perangkat yang kompatibel.",
+			"locale_code": "id",
+			"section_item_id": 18
+		},
+		{
+			"id": 108,
+			"title": "Apa bedanya AM² PTT dan AM² Command Center?",
+			"link_label": null,
+			"description": "AM² PTT berfokus pada komunikasi suara, lokasi, dan video opsional lewat HT Android. AM² Command Center berfokus pada body camera dan alur kerja visual untuk supervisor. Keduanya dikelola melalui WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 19
+		},
+		{
+			"id": 110,
+			"title": "Apa perbedaan Managed SaaS dan On-Premise?",
+			"link_label": null,
+			"description": "Pada Managed SaaS, infrastruktur platform dioperasikan oleh AM². Pada On-Premise, platform berjalan di infrastruktur Anda dan dioperasikan tim Anda, sementara AM² menyediakan software, panduan implementasi, dan pembaruan sesuai perjanjian.",
+			"locale_code": "id",
+			"section_item_id": 20
+		},
+		{
+			"id": 112,
+			"title": "Apakah AM² membutuhkan jaringan tertentu?",
+			"link_label": null,
+			"description": "AM² membutuhkan konektivitas IP yang kompatibel antara perangkat dan platform, misalnya data seluler atau Wi-Fi. Kualitas suara bergantung pada cakupan sinyal, bandwidth, latensi, perangkat, dan konfigurasi jaringan Anda.",
+			"locale_code": "id",
+			"section_item_id": 21
+		},
+		{
+			"id": 114,
+			"title": "Apakah perangkatnya buatan AM² sendiri?",
+			"link_label": null,
+			"description": "Tidak. AM² menggunakan perangkat white-label pilihan dari mitra OEM dan mengonfigurasinya untuk platform AM². Spesifikasi dan sertifikasi bergantung pada model yang Anda pilih.",
+			"locale_code": "id",
+			"section_item_id": 22
+		},
+		{
+			"id": 116,
+			"title": "Apakah komunikasi AM² terenkripsi?",
+			"link_label": null,
+			"description": "Koneksi antara aplikasi dan platform menggunakan HTTPS/WSS dengan TLS untuk melindungi data selama transit.",
+			"locale_code": "id",
+			"section_item_id": 23
+		},
+		{
+			"id": 118,
+			"title": "Bagaimana harga AM² ditentukan?",
+			"link_label": null,
+			"description": "Harga bergantung pada jenis dan jumlah perangkat, jumlah pengguna aktif atau kapasitas, fitur, model deployment, implementasi, dan paket dukungan. Hubungi tim kami untuk mendapatkan proposal sesuai kebutuhan Anda.",
+			"locale_code": "id",
+			"section_item_id": 24
+		},
+		{
+			"id": 120,
+			"title": "Bagaimana cara mencoba AM²?",
+			"link_label": null,
+			"description": "Jadwalkan demo teknis dan sampaikan perkiraan jumlah unit, lokasi operasi, kondisi jaringan, serta pilihan Managed SaaS atau On-Premise.",
+			"locale_code": "id",
+			"section_item_id": 25
+		},
+		{
+			"id": 122,
+			"title": "Komunikasi",
+			"link_label": null,
+			"description": "Jangkau satu channel penuh atau satu unit saja dengan sekali tekan.",
+			"locale_code": "id",
+			"section_item_id": 26
+		},
+		{
+			"id": 124,
+			"title": "Visibilitas",
+			"link_label": null,
+			"description": "Lihat siapa yang online, siapa yang sedang bicara, dan lokasi terakhir setiap unit.",
+			"locale_code": "id",
+			"section_item_id": 27
+		},
+		{
+			"id": 126,
+			"title": "Kendali",
+			"link_label": null,
+			"description": "Kelola pengguna, channel, hak akses, dan sesi perangkat dari WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 28
+		},
+		{
+			"id": 128,
+			"title": "Channel & Komunikasi Privat",
+			"link_label": null,
+			"description": "Bicara ke satu channel sekaligus, atau hubungi satu orang secara privat melalui relay AM².",
+			"locale_code": "id",
+			"section_item_id": 30
+		},
+		{
+			"id": 130,
+			"title": "Status Online & Lokasi Terakhir",
+			"link_label": null,
+			"description": "Lihat siapa yang online, siapa yang sedang bicara, dan posisi terakhir setiap unit.",
+			"locale_code": "id",
+			"section_item_id": 31
+		},
+		{
+			"id": 132,
+			"title": "Video Opsional",
+			"link_label": null,
+			"description": "Beralih ke video langsung bila perangkat dan konfigurasi platform mendukung.",
+			"locale_code": "id",
+			"section_item_id": 32
+		},
+		{
+			"id": 134,
+			"title": "Jangkau Tim Tanpa Menelepon",
+			"link_label": null,
+			"description": "Sampaikan pesan ke seluruh tim lewat channel, atau ke satu unit secara privat, cukup dengan sekali tekan.",
+			"locale_code": "id",
+			"section_item_id": 33
+		},
+		{
+			"id": 136,
+			"title": "Lihat Unit yang Aktif",
+			"link_label": null,
+			"description": "Status online, siapa yang sedang bicara, dan lokasi terakhir unit dalam satu tampilan.",
+			"locale_code": "id",
+			"section_item_id": 34
+		},
+		{
+			"id": 138,
+			"title": "Tambahkan Konteks Visual",
+			"link_label": null,
+			"description": "Gunakan perangkat berkamera untuk pekerjaan yang butuh melihat langsung kondisi di lapangan.",
+			"locale_code": "id",
+			"section_item_id": 35
+		},
+		{
+			"id": 140,
+			"title": "Integrasi Body Camera",
+			"link_label": null,
+			"description": "Hubungkan body camera pilihan ke alur kerja operasional Anda.",
+			"locale_code": "id",
+			"section_item_id": 36
+		},
+		{
+			"id": 142,
+			"title": "Alur Kerja Visual",
+			"link_label": null,
+			"description": "Satukan video dari lapangan dan konteks operasionalnya dalam satu pusat komando.",
+			"locale_code": "id",
+			"section_item_id": 37
+		},
+		{
+			"id": 144,
+			"title": "Ruang Kerja Supervisor & Admin",
+			"link_label": null,
+			"description": "Beri supervisor dan administrator satu ruang kerja untuk pemantauan dan koordinasi.",
+			"locale_code": "id",
+			"section_item_id": 38
+		},
+		{
+			"id": 146,
+			"title": "Hubungkan Perangkat Lapangan",
+			"link_label": null,
+			"description": "Satukan unit body camera dalam satu lingkungan operasional terpusat.",
+			"locale_code": "id",
+			"section_item_id": 39
+		},
+		{
+			"id": 148,
+			"title": "Lihat Konteks Operasional",
+			"link_label": null,
+			"description": "Pantau status unit, lokasi, dan video yang tersedia dari lapangan.",
+			"locale_code": "id",
+			"section_item_id": 40
+		},
+		{
+			"id": 150,
+			"title": "Koordinasi dari Satu Tempat",
+			"link_label": null,
+			"description": "Supervisor dan administrator mengelola alur kerja visual dari satu ruang kerja.",
+			"locale_code": "id",
+			"section_item_id": 41
+		},
+		{
+			"id": 152,
+			"title": "Infrastruktur Platform",
+			"link_label": null,
+			"description": "AM² menyediakan dan mengoperasikan server platform, jadi tim Anda tidak perlu memasang atau merawat server sendiri.",
+			"locale_code": "id",
+			"section_item_id": 42
+		},
+		{
+			"id": 154,
+			"title": "Software & Pembaruan",
+			"link_label": null,
+			"description": "AM² menghadirkan pembaruan software dan produk sesuai perjanjian layanan Anda.",
+			"locale_code": "id",
+			"section_item_id": 43
+		},
+		{
+			"id": 156,
+			"title": "Pengguna, Perangkat & Operasi",
+			"link_label": null,
+			"description": "Administrator Anda mengelola pengguna, perangkat, dan operasional harian dari WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 44
+		},
+		{
+			"id": 158,
+			"title": "Infrastruktur Anda",
+			"link_label": null,
+			"description": "Platform berjalan di server, jaringan, backup, dan monitoring yang dikendalikan organisasi Anda.",
+			"locale_code": "id",
+			"section_item_id": 45
+		},
+		{
+			"id": 160,
+			"title": "Software & Pembaruan",
+			"link_label": null,
+			"description": "AM² menyediakan software, panduan implementasi, dan pembaruan sesuai cakupan yang disepakati.",
+			"locale_code": "id",
+			"section_item_id": 46
+		},
+		{
+			"id": 162,
+			"title": "Pengguna, Perangkat & Operasi",
+			"link_label": null,
+			"description": "Tim Anda mengelola pengguna, perangkat, dan operasional sehari-hari.",
+			"locale_code": "id",
+			"section_item_id": 47
+		},
+		{
+			"id": 164,
+			"title": "Push-to-Talk via Channel",
+			"link_label": null,
+			"description": "Bicara di channel yang ditetapkan organisasi, dengan indikator transmisi dan pembicara aktif yang jelas.",
+			"locale_code": "id",
+			"section_item_id": 48
+		},
+		{
+			"id": 166,
+			"title": "Komunikasi Privat",
+			"link_label": null,
+			"description": "Hubungi satu unit lewat sesi suara atau video privat yang dirutekan oleh platform AM².",
+			"locale_code": "id",
+			"section_item_id": 49
+		},
+		{
+			"id": 168,
+			"title": "Lokasi Terakhir Unit",
+			"link_label": null,
+			"description": "Lihat posisi terakhir unit yang online, selama izin lokasi perangkat dan koneksinya tersedia.",
+			"locale_code": "id",
+			"section_item_id": 50
+		},
+		{
+			"id": 170,
+			"title": "Status Kehadiran",
+			"link_label": null,
+			"description": "Ketahui siapa yang online serta siapa yang sedang bicara atau mengirim video di setiap channel.",
+			"locale_code": "id",
+			"section_item_id": 51
+		},
+		{
+			"id": 172,
+			"title": "Administrasi Organisasi & Pengguna",
+			"link_label": null,
+			"description": "Kelola struktur organisasi atau tenant, administrator, dan pengguna lapangan.",
+			"locale_code": "id",
+			"section_item_id": 52
+		},
+		{
+			"id": 174,
+			"title": "Manajemen Channel",
+			"link_label": null,
+			"description": "Buat channel, atur keanggotaan, dan tentukan channel default.",
+			"locale_code": "id",
+			"section_item_id": 53
+		},
+		{
+			"id": 176,
+			"title": "Kebijakan Akses",
+			"link_label": null,
+			"description": "Terapkan izin pengguna, channel, dan fitur sesuai peran operasional masing-masing.",
+			"locale_code": "id",
+			"section_item_id": 54
+		},
+		{
+			"id": 178,
+			"title": "Konfigurasi Fitur",
+			"link_label": null,
+			"description": "Aktifkan atau nonaktifkan fitur yang didukung, seperti peta, video, dan komunikasi privat.",
+			"locale_code": "id",
+			"section_item_id": 55
+		},
+		{
+			"id": 180,
+			"title": "Ruang Kerja Operasi Visual",
+			"link_label": null,
+			"description": "Pantau video body camera secara langsung dan koordinasikan aktivitas lapangan dari satu layar.",
+			"locale_code": "id",
+			"section_item_id": 56
+		},
+		{
+			"id": 182,
+			"title": "Akses Supervisor",
+			"link_label": null,
+			"description": "Tetapkan izin berbasis peran sesuai tanggung jawab setiap supervisor dan administrator.",
+			"locale_code": "id",
+			"section_item_id": 57
+		},
+		{
+			"id": 184,
+			"title": "Konteks Operasional",
+			"link_label": null,
+			"description": "Lihat video bersama status dan lokasi unit, agar tim bertindak berdasarkan gambaran yang utuh.",
+			"locale_code": "id",
+			"section_item_id": 58
+		},
+		{
+			"id": 186,
+			"title": "Pilihan Deployment",
+			"link_label": null,
+			"description": "Gunakan sebagai Managed SaaS atau On-Premise yang dioperasikan tim Anda sendiri.",
+			"locale_code": "id",
+			"section_item_id": 59
+		},
+		{
+			"id": 188,
+			"title": "Manajemen Organisasi",
+			"link_label": null,
+			"description": "Atur struktur organisasi, cakupan tenant, dan batas kewenangan administrator.",
+			"locale_code": "id",
+			"section_item_id": 60
+		},
+		{
+			"id": 190,
+			"title": "Kontrol Pengguna & Akses",
+			"link_label": null,
+			"description": "Tetapkan peran dan izin berdasarkan tanggung jawab operasional.",
+			"locale_code": "id",
+			"section_item_id": 61
+		},
+		{
+			"id": 192,
+			"title": "Manajemen Perangkat & Fitur",
+			"link_label": null,
+			"description": "Tetapkan body camera ke pengguna dan atur fitur Command Center yang dapat mereka gunakan.",
+			"locale_code": "id",
+			"section_item_id": 62
+		},
+		{
+			"id": 194,
+			"title": "Administrasi Deployment",
+			"link_label": null,
+			"description": "Mendukung deployment Managed SaaS maupun On-Premise yang dioperasikan tim Anda.",
+			"locale_code": "id",
+			"section_item_id": 63
+		},
+		{
+			"id": 196,
+			"title": "Komunikasi Lapangan",
+			"link_label": null,
+			"description": "Push-to-talk, komunikasi privat, lokasi terakhir unit, video opsional, dan status online di perangkat mobile.",
+			"locale_code": "id",
+			"section_item_id": 66
+		},
+		{
+			"id": 198,
+			"title": "Administrasi Operasional",
+			"link_label": null,
+			"description": "Pengelolaan terpusat untuk pengguna, channel, kebijakan akses, izin fitur, dan sesi perangkat di WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 67
+		},
+		{
+			"id": 200,
+			"title": "Deployment",
+			"link_label": null,
+			"description": "Managed SaaS yang dioperasikan AM², atau On-Premise yang dioperasikan tim Anda.",
+			"locale_code": "id",
+			"section_item_id": 68
+		},
+		{
+			"id": 202,
+			"title": "Layanan",
+			"link_label": null,
+			"description": "Perencanaan, konfigurasi, penyiapan perangkat, pelatihan, pembaruan, dan dukungan sesuai cakupan yang disepakati.",
+			"locale_code": "id",
+			"section_item_id": 69
+		},
+		{
+			"id": 204,
+			"title": null,
+			"link_label": null,
+			"description": "Kami mulai dari operasional Anda: tim, lokasi, jaringan, alur kerja, dan kebutuhan akses. Setelah itu kami menentukan perangkat, platform, dan deployment yang sesuai.",
+			"locale_code": "id",
+			"section_item_id": 70
+		},
+		{
+			"id": 206,
+			"title": null,
+			"link_label": null,
+			"description": "Kami mengonfigurasi platform, pengguna, channel, hak akses, dan perangkat, lalu mendampingi administrator, supervisor, dan tim lapangan Anda saat mulai menggunakannya.",
+			"locale_code": "id",
+			"section_item_id": 71
+		},
+		{
+			"id": 208,
+			"title": null,
+			"link_label": null,
+			"description": "Setelah go-live, kami menjaga platform tetap mutakhir melalui pembaruan software dan dukungan berkelanjutan sesuai perjanjian.",
+			"locale_code": "id",
+			"section_item_id": 72
+		},
+		{
+			"id": 209,
+			"title": "Clearer Communication",
+			"link_label": null,
+			"description": "Connect teams through structured PTT channels, with private calls when needed.",
+			"locale_code": "en",
+			"section_item_id": 73
+		},
+		{
+			"id": 210,
+			"title": "Komunikasi yang Lebih Jelas",
+			"link_label": null,
+			"description": "Hubungkan tim lewat channel PTT yang tertata, dengan panggilan privat saat dibutuhkan.",
+			"locale_code": "id",
+			"section_item_id": 73
+		},
+		{
+			"id": 211,
+			"title": "Visibility Across Field Units",
+			"link_label": null,
+			"description": "See who is online and each unit's latest available location, so coordination stays on track.",
+			"locale_code": "en",
+			"section_item_id": 74
+		},
+		{
+			"id": 212,
+			"title": "Visibilitas Seluruh Unit Lapangan",
+			"link_label": null,
+			"description": "Lihat siapa yang online dan lokasi terakhir setiap unit, sehingga koordinasi tetap terarah.",
+			"locale_code": "id",
+			"section_item_id": 74
+		},
+		{
+			"id": 213,
+			"title": "Centralized Administration",
+			"link_label": null,
+			"description": "Manage users, channels, access, and device sessions from one WebAdmin console.",
+			"locale_code": "en",
+			"section_item_id": 75
+		},
+		{
+			"id": 214,
+			"title": "Administrasi Terpusat",
+			"link_label": null,
+			"description": "Kelola pengguna, channel, hak akses, dan sesi perangkat dari satu konsol WebAdmin.",
+			"locale_code": "id",
+			"section_item_id": 75
+		},
+		{
+			"id": 216,
+			"title": "Deployment yang Fleksibel",
+			"link_label": null,
+			"description": "Pilih Managed SaaS yang dioperasikan AM², atau On-Premise yang dioperasikan tim Anda sendiri.",
+			"locale_code": "id",
+			"section_item_id": 29
+		},
+		{
+			"id": 217,
+			"title": "Optional Video",
+			"link_label": null,
+			"description": "Share channel or private video when the device and platform configuration support it.",
+			"locale_code": "en",
+			"section_item_id": 76
+		},
+		{
+			"id": 218,
+			"title": "Video Opsional",
+			"link_label": null,
+			"description": "Bagikan video di channel atau secara privat bila perangkat dan konfigurasi platform mendukung.",
+			"locale_code": "id",
+			"section_item_id": 76
+		},
+		{
+			"id": 219,
+			"title": "Configurable Field Controls",
+			"link_label": null,
+			"description": "Talk with on-screen controls, compatible device keys, headset and media buttons, or tested BLE accessories.",
+			"locale_code": "en",
+			"section_item_id": 77
+		},
+		{
+			"id": 220,
+			"title": "Kontrol Lapangan yang Dapat Diatur",
+			"link_label": null,
+			"description": "Bicara lewat tombol di layar, tombol perangkat yang kompatibel, tombol headset dan media, atau aksesori BLE yang sudah diuji.",
+			"locale_code": "id",
+			"section_item_id": 77
+		},
+		{
+			"id": 221,
+			"title": "VOX",
+			"link_label": null,
+			"description": "Transmit hands-free with configurable voice activation for supported workflows.",
+			"locale_code": "en",
+			"section_item_id": 78
+		},
+		{
+			"id": 222,
+			"title": "VOX",
+			"link_label": null,
+			"description": "Kirim suara tanpa menekan tombol dengan aktivasi suara yang dapat diatur, untuk alur kerja yang didukung.",
+			"locale_code": "id",
+			"section_item_id": 78
+		},
+		{
+			"id": 223,
+			"title": "Foreground Operation and Reconnect",
+			"link_label": null,
+			"description": "Runs as an Android foreground service and tries to reconnect after the connection drops.",
+			"locale_code": "en",
+			"section_item_id": 79
+		},
+		{
+			"id": 224,
+			"title": "Berjalan di Latar Depan & Tersambung Ulang",
+			"link_label": null,
+			"description": "Berjalan sebagai foreground service Android dan mencoba tersambung kembali setelah koneksi terputus.",
+			"locale_code": "id",
+			"section_item_id": 79
+		},
+		{
+			"id": 225,
+			"title": "Device Session Control",
+			"link_label": null,
+			"description": "See active device sessions and sign out assigned units remotely when needed.",
+			"locale_code": "en",
+			"section_item_id": 80
+		},
+		{
+			"id": 226,
+			"title": "Kontrol Sesi Perangkat",
+			"link_label": null,
+			"description": "Pantau sesi perangkat yang aktif dan keluarkan unit dari jarak jauh bila diperlukan.",
+			"locale_code": "id",
+			"section_item_id": 80
+		},
+		{
+			"id": 227,
+			"title": "Operational Visibility",
+			"link_label": null,
+			"description": "Review available user, channel, and activity information in one place.",
+			"locale_code": "en",
+			"section_item_id": 81
+		},
+		{
+			"id": 228,
+			"title": "Visibilitas Operasional",
+			"link_label": null,
+			"description": "Tinjau informasi pengguna, channel, dan aktivitas yang tersedia di satu tempat.",
+			"locale_code": "id",
+			"section_item_id": 81
+		},
+		{
+			"id": 229,
+			"title": "Application Update Support",
+			"link_label": null,
+			"description": "Support managed app update workflows for approved deployments.",
+			"locale_code": "en",
+			"section_item_id": 82
+		},
+		{
+			"id": 230,
+			"title": "Dukungan Pembaruan Aplikasi",
+			"link_label": null,
+			"description": "Dukung alur pembaruan aplikasi yang terkelola untuk deployment yang disetujui.",
+			"locale_code": "id",
+			"section_item_id": 82
+		},
+		{
+			"id": 231,
+			"title": "AM² PTT",
+			"link_label": null,
+			"description": null,
+			"locale_code": "en",
+			"section_item_id": 83
+		},
+		{
+			"id": 232,
+			"title": "AM² PTT",
+			"link_label": null,
+			"description": null,
+			"locale_code": "id",
+			"section_item_id": 83
+		},
+		{
+			"id": 233,
+			"title": "AM² Command Center",
+			"link_label": null,
+			"description": null,
+			"locale_code": "en",
+			"section_item_id": 84
+		},
+		{
+			"id": 234,
+			"title": "AM² Command Center",
+			"link_label": null,
+			"description": null,
+			"locale_code": "id",
+			"section_item_id": 84
+		},
+		{
+			"id": 235,
+			"title": "Controlled Software Lifecycle",
+			"link_label": null,
+			"description": "Builds and updates follow controlled release and integrity processes.",
+			"locale_code": "en",
+			"section_item_id": 85
+		},
+		{
+			"id": 236,
+			"title": "Siklus Software yang Terkendali",
+			"link_label": null,
+			"description": "Build dan pembaruan mengikuti proses rilis dan pemeriksaan integritas yang terkendali.",
+			"locale_code": "id",
+			"section_item_id": 85
+		},
+		{
+			"id": 237,
+			"title": "On-Premise Infrastructure",
+			"link_label": null,
+			"description": "Keep the infrastructure boundary within your own environment.",
+			"locale_code": "en",
+			"section_item_id": 86
+		},
+		{
+			"id": 238,
+			"title": "Infrastruktur On-Premise",
+			"link_label": null,
+			"description": "Batas infrastruktur tetap berada di dalam lingkungan Anda sendiri.",
+			"locale_code": "id",
+			"section_item_id": 86
+		},
+		{
+			"id": 239,
+			"title": "Role-Based Access",
+			"link_label": null,
+			"description": "Access follows the permissions assigned to each user.",
+			"locale_code": "en",
+			"section_item_id": 87
+		},
+		{
+			"id": 240,
+			"title": "Akses Berbasis Peran",
+			"link_label": null,
+			"description": "Akses mengikuti izin yang diberikan kepada setiap pengguna.",
+			"locale_code": "id",
+			"section_item_id": 87
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"code": "ht_poc_voice_video_maps",
+			"image_id": "00000000-0000-4000-8000-000000000024",
+			"is_active": true,
+			"sort_order": 20,
+			"platform_id": 1
+		},
+		{
+			"id": 2,
+			"code": "ht_poc_voice_maps",
+			"image_id": "00000000-0000-4000-8000-000000000025",
+			"is_active": true,
+			"sort_order": 10,
+			"platform_id": 1
+		},
+		{
+			"id": 3,
+			"code": "body_camera",
+			"image_id": "00000000-0000-4000-8000-000000000026",
+			"is_active": true,
+			"sort_order": 10,
+			"platform_id": 2
+		}
+	],
+	"product_translations": [
+		{
+			"id": 1,
+			"name": "HT PoC Voice & Video + Maps",
+			"product_id": 1,
+			"description": "Everything in HT PoC Voice + Maps, plus live video for channels and private sessions through the AM² relay. Front or rear camera support depends on the model.",
+			"locale_code": "en"
+		},
+		{
+			"id": 2,
+			"name": "HT PoC Voice + Maps",
+			"product_id": 2,
+			"description": "A Push-to-Talk over Cellular (PoC) handheld for channel and one-to-one voice, latest unit location, online and speaker presence, and voice-activated transmission (VOX).",
+			"locale_code": "en"
+		},
+		{
+			"id": 3,
+			"name": "Body Camera",
+			"product_id": 3,
+			"description": "A body-worn camera that brings live video and unit location from the field into AM² Command Center, with each device assigned to a user.",
+			"locale_code": "en"
+		},
+		{
+			"id": 4,
+			"name": "HT PoC Voice & Video + Maps",
+			"product_id": 1,
+			"description": "Semua kemampuan HT PoC Voice + Maps, ditambah video langsung untuk channel maupun sesi privat melalui relay AM². Dukungan kamera depan atau belakang bergantung pada model.",
+			"locale_code": "id"
+		},
+		{
+			"id": 6,
+			"name": "HT PoC Voice + Maps",
+			"product_id": 2,
+			"description": "HT Push-to-Talk over Cellular (PoC) untuk komunikasi suara via channel maupun satu-ke-satu, lokasi terakhir unit, status online dan pembicara, serta VOX (aktivasi suara).",
+			"locale_code": "id"
+		},
+		{
+			"id": 8,
+			"name": "Body Camera",
+			"product_id": 3,
+			"description": "Kamera yang dikenakan di badan untuk mengirim video langsung dan lokasi unit dari lapangan ke AM² Command Center, dengan setiap perangkat ditetapkan ke satu pengguna.",
+			"locale_code": "id"
+		}
+	],
+	"responsibilities": [
+		{
+			"id": 1,
+			"code": "platform_infrastructure",
+			"sort_order": 10
+		},
+		{
+			"id": 2,
+			"code": "platform_operation",
+			"sort_order": 20
+		},
+		{
+			"id": 3,
+			"code": "software_updates",
+			"sort_order": 30
+		},
+		{
+			"id": 4,
+			"code": "agreed_support",
+			"sort_order": 40
+		},
+		{
+			"id": 5,
+			"code": "users",
+			"sort_order": 50
+		},
+		{
+			"id": 6,
+			"code": "channels",
+			"sort_order": 60
+		},
+		{
+			"id": 7,
+			"code": "devices",
+			"sort_order": 70
+		},
+		{
+			"id": 8,
+			"code": "field_connectivity",
+			"sort_order": 80
+		},
+		{
+			"id": 9,
+			"code": "daily_administration",
+			"sort_order": 90
+		}
+	],
+	"responsibility_translations": [
+		{
+			"id": 1,
+			"name": "Platform Infrastructure",
+			"locale_code": "en",
+			"responsibility_id": 1
+		},
+		{
+			"id": 2,
+			"name": "Platform Operation",
+			"locale_code": "en",
+			"responsibility_id": 2
+		},
+		{
+			"id": 3,
+			"name": "Software Updates",
+			"locale_code": "en",
+			"responsibility_id": 3
+		},
+		{
+			"id": 4,
+			"name": "Support (per Agreement)",
+			"locale_code": "en",
+			"responsibility_id": 4
+		},
+		{
+			"id": 5,
+			"name": "Users",
+			"locale_code": "en",
+			"responsibility_id": 5
+		},
+		{
+			"id": 6,
+			"name": "Channels",
+			"locale_code": "en",
+			"responsibility_id": 6
+		},
+		{
+			"id": 7,
+			"name": "Devices",
+			"locale_code": "en",
+			"responsibility_id": 7
+		},
+		{
+			"id": 8,
+			"name": "Field Connectivity",
+			"locale_code": "en",
+			"responsibility_id": 8
+		},
+		{
+			"id": 9,
+			"name": "Daily Administration",
+			"locale_code": "en",
+			"responsibility_id": 9
+		},
+		{
+			"id": 10,
+			"name": "Infrastruktur Platform",
+			"locale_code": "id",
+			"responsibility_id": 1
+		},
+		{
+			"id": 12,
+			"name": "Operasional Platform",
+			"locale_code": "id",
+			"responsibility_id": 2
+		},
+		{
+			"id": 14,
+			"name": "Pembaruan Software",
+			"locale_code": "id",
+			"responsibility_id": 3
+		},
+		{
+			"id": 16,
+			"name": "Dukungan (sesuai Perjanjian)",
+			"locale_code": "id",
+			"responsibility_id": 4
+		},
+		{
+			"id": 18,
+			"name": "Pengguna",
+			"locale_code": "id",
+			"responsibility_id": 5
+		},
+		{
+			"id": 20,
+			"name": "Channel",
+			"locale_code": "id",
+			"responsibility_id": 6
+		},
+		{
+			"id": 22,
+			"name": "Perangkat",
+			"locale_code": "id",
+			"responsibility_id": 7
+		},
+		{
+			"id": 24,
+			"name": "Konektivitas Lapangan",
+			"locale_code": "id",
+			"responsibility_id": 8
+		},
+		{
+			"id": 26,
+			"name": "Administrasi Harian",
+			"locale_code": "id",
+			"responsibility_id": 9
+		}
+	],
+	"deployment_model_responsibilities": [
+		{
+			"id": 1,
+			"owner_party": "customer",
+			"responsibility_id": 1,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 2,
+			"owner_party": "am2",
+			"responsibility_id": 1,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 3,
+			"owner_party": "customer",
+			"responsibility_id": 2,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 4,
+			"owner_party": "am2",
+			"responsibility_id": 2,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 5,
+			"owner_party": "am2",
+			"responsibility_id": 3,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 6,
+			"owner_party": "am2",
+			"responsibility_id": 3,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 7,
+			"owner_party": "am2",
+			"responsibility_id": 4,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 8,
+			"owner_party": "am2",
+			"responsibility_id": 4,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 9,
+			"owner_party": "customer",
+			"responsibility_id": 5,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 10,
+			"owner_party": "customer",
+			"responsibility_id": 5,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 11,
+			"owner_party": "customer",
+			"responsibility_id": 6,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 12,
+			"owner_party": "customer",
+			"responsibility_id": 6,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 13,
+			"owner_party": "customer",
+			"responsibility_id": 7,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 14,
+			"owner_party": "customer",
+			"responsibility_id": 7,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 15,
+			"owner_party": "customer",
+			"responsibility_id": 8,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 16,
+			"owner_party": "customer",
+			"responsibility_id": 8,
+			"deployment_model_id": 1
+		},
+		{
+			"id": 17,
+			"owner_party": "customer",
+			"responsibility_id": 9,
+			"deployment_model_id": 2
+		},
+		{
+			"id": 18,
+			"owner_party": "customer",
+			"responsibility_id": 9,
+			"deployment_model_id": 1
+		}
+	],
+	"file_translations": [
+		{
+			"id": 1,
+			"alt_text": "AM² WebAdmin dashboard",
+			"locale_code": "en",
+			"directus_files_id": "00000000-0000-4000-8000-000000000027"
+		},
+		{
+			"id": 2,
+			"alt_text": "Dashboard WebAdmin AM²",
+			"locale_code": "id",
+			"directus_files_id": "00000000-0000-4000-8000-000000000027"
+		}
+	],
+	"directus_files": [
+		{
+			"id": "00000000-0000-4000-8000-000000000001",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-5.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000002",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-6.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000003",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-9.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000004",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-10.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000005",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-11.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000006",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-12.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000007",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-13.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000008",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-14.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000009",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-15.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000000a",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-16.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000000b",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-17.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000000c",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-29.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000000d",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-33.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000000e",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-34.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000000f",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-35.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000010",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-39.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000011",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-40.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000012",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-41.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000013",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-64.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000014",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-65.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000015",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-66.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000016",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-67.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000017",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-68.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000018",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-69.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000019",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-70.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000001a",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-71.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000001b",
+			"type": "image/jpeg",
+			"width": 1240,
+			"folder": null,
+			"height": 1020,
+			"filename_download": "item-72.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000001c",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-73.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000001d",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-74.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000001e",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-75.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000001f",
+			"type": "image/jpeg",
+			"width": 2048,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "item-83.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000020",
+			"type": "image/jpeg",
+			"width": 2048,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "item-84.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000021",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-85.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000022",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-86.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000023",
+			"type": "image/jpeg",
+			"width": 1200,
+			"folder": null,
+			"height": 1500,
+			"filename_download": "item-87.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000024",
+			"type": "image/jpeg",
+			"width": 1000,
+			"folder": null,
+			"height": 1300,
+			"filename_download": "product-1.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000025",
+			"type": "image/jpeg",
+			"width": 1000,
+			"folder": null,
+			"height": 1300,
+			"filename_download": "product-2.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000026",
+			"type": "image/jpeg",
+			"width": 1000,
+			"folder": null,
+			"height": 1300,
+			"filename_download": "product-3.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000027",
+			"type": "image/jpeg",
+			"width": 2048,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-7.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000028",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-14.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000029",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-15.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000002a",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-16.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000002b",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-19.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000002c",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-20.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000002d",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-23.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000002e",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-24.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000002f",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-27.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000030",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-28.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000031",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-29.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000032",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-30.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000033",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-31.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000034",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-32.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000035",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-33.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000036",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-34.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000037",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-35.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000038",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-36.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-000000000039",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-37.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000003a",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-38.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000003b",
+			"type": "image/jpeg",
+			"width": 2400,
+			"folder": null,
+			"height": 1100,
+			"filename_download": "section-39.jpg"
+		},
+		{
+			"id": "00000000-0000-4000-8000-00000000003c",
+			"type": "image/jpeg",
+			"width": 1600,
+			"folder": null,
+			"height": 1000,
+			"filename_download": "section-40.jpg"
+		}
+	]
+}

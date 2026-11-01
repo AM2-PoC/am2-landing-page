@@ -1,0 +1,253 @@
+/* ── Section decoration ─────────────────────────────────────────────────
+   Thin outline geometry (rings, chevrons, diamonds, crosshairs) in the style of
+   the AM² WebAdmin login screen. Strokes only: no fills, boxes or background
+   colours, so only the shapes themselves are visible.
+
+   Where the shapes go — only into space that is always empty:
+     lane   the strip between the section edge and its widest content
+            (outer gutter, plus the free space beside a narrow card or table)
+     band   the top / bottom padding of the section
+     flank  the space between the content edge and a centred section heading
+            (laptop widths, where the lanes are narrow; see .decor-intro)
+   Every size below is the largest that still fits into a lane or a band, so the
+   shapes grow on wide screens, shrink on phones and are left out (size 0) when
+   there is no room. Nothing here can cover text, receive clicks, or make the page
+   scroll sideways: the layer is clipped to its section and sits behind content.
+   Check after changes: npm run audit:layout (decor-overlap / decor-footer).
+
+   Inputs set by the section (custom properties, inherited by the layer):
+     --section-pad-top / --section-pad-bottom   free bands (section-y utilities)
+     --decor-content-width                      widest content, default 80rem */
+
+.decor {
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	overflow: hidden;
+	pointer-events: none;
+	user-select: none;
+	color: var(--am2-decor-line);
+	/* Children size themselves against the section width (cqw) */
+	container: decor / inline-size;
+
+	--decor-gap-x: var(--spacing-gutter);
+	--decor-gap-y: 0.75rem;
+	--decor-edge: 0.5rem;
+	--decor-lane: max(
+		var(--spacing-gutter),
+		(100cqw - min(100cqw - 2 * var(--spacing-gutter), var(--decor-content-width, 80rem))) / 2
+	);
+	--decor-band-top: var(--section-pad-top, 0px);
+	--decor-band-bottom: var(--section-pad-bottom, 0px);
+}
+
+.decor .decor-shape {
+	position: absolute;
+	display: block;
+	overflow: visible;
+	--decor-band: var(--decor-band-bottom);
+}
+
+.decor-shape :is(path, circle) {
+	/* 1 px lines at every size */
+	vector-effect: non-scaling-stroke;
+}
+
+.decor .decor-shape[data-anchor='top'] {
+	--decor-band: var(--decor-band-top);
+}
+
+/* Middle slots only use the side lane: on narrow screens they disappear */
+.decor .decor-shape[data-anchor='middle'] {
+	--decor-band: 0px;
+}
+
+/* Edge shapes: centred near the section edge, only --decor-fraction of the width is visible.
+   Size = the larger of "fits in the lane" and "fits in the band", capped by --decor-max;
+   below --decor-min the size collapses to 0 (no slivers). */
+.decor .decor-shape[data-kind='edge'] {
+	--decor-fit-lane: calc((var(--decor-lane) - var(--decor-gap-x)) / var(--decor-fraction));
+	--decor-fit-band: calc(
+		(var(--decor-band) - var(--decor-gap-y) - var(--decor-edge)) / var(--decor-ratio)
+	);
+	--decor-raw: min(var(--decor-max), max(var(--decor-fit-lane), var(--decor-fit-band)));
+	--decor-w: min(var(--decor-raw), max(0px, (var(--decor-raw) - var(--decor-min)) * 1000));
+	width: var(--decor-w);
+	height: min(var(--decor-w) * var(--decor-ratio), 100% - 2 * var(--decor-edge));
+}
+
+.decor .decor-shape[data-kind='edge'][data-side='left'] {
+	left: calc(var(--decor-w) * (var(--decor-fraction) - 1));
+}
+
+.decor .decor-shape[data-kind='edge'][data-side='right'] {
+	right: calc(var(--decor-w) * (var(--decor-fraction) - 1));
+}
+
+.decor .decor-shape[data-kind='edge'][data-anchor='top'] {
+	top: var(--decor-edge);
+}
+
+.decor .decor-shape[data-kind='edge'][data-anchor='bottom'] {
+	bottom: var(--decor-edge);
+}
+
+.decor .decor-shape[data-kind='edge'][data-anchor='middle'] {
+	top: var(--decor-y, 50%);
+	translate: 0 -50%;
+}
+
+/* Floating shapes: fully visible, centred in the lane (wide screens) or in the band */
+.decor .decor-shape[data-kind='float'] {
+	--decor-fit-lane: calc(var(--decor-lane) - 2 * var(--decor-gap-x));
+	--decor-fit-band: calc(var(--decor-band) - 2 * var(--decor-gap-y));
+	--decor-raw: min(var(--decor-max), max(var(--decor-fit-lane), var(--decor-fit-band)));
+	--decor-s: min(var(--decor-raw), max(0px, (var(--decor-raw) - var(--decor-min)) * 1000));
+	--decor-cx: max(var(--decor-lane) / 2, var(--decor-s) / 2 + 1rem);
+	--decor-cy: max(var(--decor-band) / 2, var(--decor-s) / 2 + var(--decor-edge));
+	width: var(--decor-s);
+	height: var(--decor-s);
+}
+
+.decor .decor-shape[data-kind='float'][data-side='left'] {
+	left: calc(var(--decor-cx) - var(--decor-s) / 2);
+}
+
+.decor .decor-shape[data-kind='float'][data-side='right'] {
+	right: calc(var(--decor-cx) - var(--decor-s) / 2);
+}
+
+.decor .decor-shape[data-kind='float'][data-anchor='top'] {
+	top: calc(var(--decor-cy) - var(--decor-s) / 2);
+}
+
+.decor .decor-shape[data-kind='float'][data-anchor='bottom'] {
+	bottom: calc(var(--decor-cy) - var(--decor-s) / 2);
+}
+
+.decor .decor-shape[data-kind='float'][data-anchor='middle'] {
+	top: calc(var(--decor-y, 50%) - var(--decor-s) / 2);
+}
+
+/* Shape proportions and sizes (max = full width of the shape box) */
+.decor .decor-shape[data-shape='rings'] {
+	--decor-fraction: 0.5;
+	--decor-ratio: 1;
+	--decor-min: 2.5rem;
+}
+
+.decor .decor-shape[data-shape='rings'][data-size='lg'] {
+	--decor-max: 36rem;
+}
+
+.decor .decor-shape[data-shape='rings'][data-size='md'] {
+	--decor-max: 26rem;
+}
+
+.decor .decor-shape[data-shape='rings'][data-size='sm'] {
+	--decor-max: 18rem;
+}
+
+.decor .decor-shape[data-shape='chevrons'] {
+	--decor-fraction: 0.62;
+	--decor-ratio: 1.18;
+	--decor-min: 2.5rem;
+}
+
+.decor .decor-shape[data-shape='chevrons'][data-size='lg'] {
+	--decor-max: 26rem;
+}
+
+.decor .decor-shape[data-shape='chevrons'][data-size='md'] {
+	--decor-max: 20rem;
+}
+
+.decor .decor-shape[data-shape='chevrons'][data-size='sm'] {
+	--decor-max: 14rem;
+}
+
+.decor .decor-shape[data-shape='diamonds'] {
+	--decor-min: 2.25rem;
+}
+
+.decor .decor-shape[data-shape='diamonds'][data-size='lg'] {
+	--decor-max: 9.5rem;
+}
+
+.decor .decor-shape[data-shape='diamonds'][data-size='md'] {
+	--decor-max: 7rem;
+}
+
+.decor .decor-shape[data-shape='diamonds'][data-size='sm'] {
+	--decor-max: 5rem;
+}
+
+/* Crosshairs carry the accent colour, like the amber marks on the login screen */
+.decor .decor-shape[data-shape='cross'] {
+	--decor-min: 1rem;
+	color: var(--am2-decor-accent);
+}
+
+.decor .decor-shape[data-shape='cross'][data-size='lg'] {
+	--decor-max: 2.5rem;
+}
+
+.decor .decor-shape[data-shape='cross'][data-size='md'] {
+	--decor-max: 2.125rem;
+}
+
+.decor .decor-shape[data-shape='cross'][data-size='sm'] {
+	--decor-max: 1.75rem;
+}
+
+/* Heading accent (IntroDecor inside a centred SectionIntro): one shape in the free flank
+   between the content edge and the intro text, vertically centred on the intro.
+   The section is a size container, so 100cqw is the section width and 100% the intro width. */
+.decor-intro {
+	position: absolute;
+	top: 50%;
+	z-index: -1;
+	translate: 0 -50%;
+	pointer-events: none;
+	user-select: none;
+	color: var(--am2-decor-line);
+
+	--decor-gap: var(--spacing-gutter);
+	--decor-flank: calc(
+		(min(100cqw - 2 * var(--spacing-gutter), var(--decor-content-width, 80rem)) - 100%) / 2 - 2 *
+			var(--decor-gap)
+	);
+	--decor-w: min(var(--decor-flank), max(0px, (var(--decor-flank) - 3rem) * 1000));
+	width: var(--decor-w);
+	height: min(100%, 9rem);
+}
+
+.decor-intro[data-side='left'] {
+	right: calc(100% + var(--decor-gap));
+}
+
+.decor-intro[data-side='right'] {
+	left: calc(100% + var(--decor-gap));
+}
+
+.decor-intro .decor-shape {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* On wide screens the outer lanes carry the decoration; heading accents would only crowd it */
+@container (width >= 100rem) {
+	.decor-intro {
+		display: none;
+	}
+}
+
+/* Not needed on paper, and Windows high-contrast mode would turn the lines solid */
+@media print, (forced-colors: active) {
+	.decor,
+	.decor-intro {
+		display: none;
+	}
+}

@@ -1,0 +1,57 @@
+@layer base {
+	html {
+		background-color: var(--color-canvas);
+		color: var(--color-body);
+		font-family: var(--font-sans);
+		-webkit-font-smoothing: antialiased;
+		/* Anchor targets (skip link, #ids) never hide under the sticky 64 px navbar */
+		scroll-padding-top: 5rem;
+	}
+
+	/* Header · main · footer as a column, so the footer stays at the bottom of short pages */
+	body {
+		display: flex;
+		min-height: 100dvh;
+		flex-direction: column;
+	}
+
+	/* Headings get even line lengths; paragraphs avoid a lone word on the last line.
+	   Long words (e-mails, URLs) wrap instead of pushing the layout sideways. */
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-wrap: balance;
+	}
+
+	p,
+	li,
+	dd,
+	figcaption {
+		text-wrap: pretty;
+	}
+
+	:where(h1, h2, h3, h4, p, li, a, dd, dt, td, th, summary) {
+		overflow-wrap: break-word;
+	}
+
+	:focus-visible {
+		outline: 2px solid var(--color-accent-ink);
+		outline-offset: 2px;
+	}
+
+	::selection {
+		background-color: var(--color-accent);
+		color: var(--color-on-accent);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			transition-duration: 0.01ms !important;
+			scroll-behavior: auto !important;
+		}
+	}
+}

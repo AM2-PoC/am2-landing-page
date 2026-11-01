@@ -1,0 +1,60 @@
+/* ── Section backgrounds that melt into each other ─────────────────────
+   Every <Section> has data-section-tone (canvas | raised | gradient | chrome).
+   Instead of a hard colour edge between two sections, a section starts in the
+   colour its neighbour above ends with and fades into its own colour. The
+   bottom of the last section, the navbar and the footer are not touched.
+
+   --tone-top / --tone-bottom   the section's own colours
+   --blend-from / --blend-in    colour above it, and how far down the fade runs
+   Kept in @layer components, so a utility class on a single section can still override it. */
+
+@layer components {
+	[data-section-tone] {
+		/* About 40 % of the section, never shorter than 96 px or longer than 288 px */
+		--tone-blend: clamp(6rem, 40%, 18rem);
+		background-color: var(--tone-bottom);
+		background-image: linear-gradient(
+			to bottom,
+			var(--blend-from, var(--tone-top)) 0%,
+			var(--tone-top) var(--blend-in, 0%),
+			var(--tone-bottom) 100%
+		);
+	}
+
+	[data-section-tone='canvas'] {
+		--tone-top: var(--am2-canvas);
+		--tone-bottom: var(--am2-canvas);
+	}
+	[data-section-tone='raised'] {
+		--tone-top: var(--am2-canvas-raised);
+		--tone-bottom: var(--am2-canvas-raised);
+	}
+	[data-section-tone='gradient'] {
+		--tone-top: var(--am2-canvas-deep);
+		--tone-bottom: var(--am2-canvas-raised);
+	}
+	[data-section-tone='chrome'] {
+		--tone-top: var(--am2-chrome);
+		--tone-bottom: var(--am2-chrome);
+	}
+
+	/* Start in the colour the section above ends with.
+	   Heroes have no tone attribute: they end in the page colour (canvas). */
+	[data-section-tone] + [data-section-tone],
+	main > section:not([data-section-tone]) + [data-section-tone] {
+		--blend-from: var(--am2-canvas);
+		--blend-in: var(--tone-blend);
+	}
+	[data-section-tone='raised'] + [data-section-tone],
+	[data-section-tone='gradient'] + [data-section-tone] {
+		--blend-from: var(--am2-canvas-raised);
+	}
+	[data-section-tone='chrome'] + [data-section-tone] {
+		--blend-from: var(--am2-chrome);
+	}
+
+	/* blend="none" (CTA): one flat colour, no fade from the section above */
+	[data-section-blend='none'] {
+		background-image: none;
+	}
+}
