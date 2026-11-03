@@ -13,7 +13,13 @@
 	{#if section.heading}
 		<HighlightedHeading text={section.heading} highlight={section.highlight} id={headingId} />
 	{/if}
-	<ol data-reveal-group class={['space-y-section-sm', section.heading && 'mt-intro']}>
+	<ol
+		data-reveal-group
+		class={[
+			section.key === 'about_how_we_work' ? 'how-we-work-list' : 'space-y-section-sm',
+			section.heading && 'mt-intro'
+		]}
+	>
 		{#each section.items as item, i (item.id)}
 			<li data-reveal-group class="lg:gap-x-split grid items-center gap-y-8 lg:grid-cols-2">
 				<div data-reveal-group class={['min-w-0', i % 2 === 1 && 'lg:order-2']}>
@@ -31,3 +37,16 @@
 		{/each}
 	</ol>
 </Section>
+
+<style>
+	.how-we-work-list {
+		display: grid;
+		row-gap: 4rem;
+	}
+
+	@media (width >= 64rem) {
+		.how-we-work-list {
+			row-gap: 10rem;
+		}
+	}
+</style>
