@@ -30,7 +30,6 @@
 
 <SiteHeader items={data.navigation.header} locales={data.site.locales} locale={data.locale} />
 
-<!-- On short pages the last section stretches, so its background reaches the footer -->
 <main
 	id="content"
 	tabindex="-1"
@@ -40,9 +39,3 @@
 </main>
 
 <SiteFooter items={data.navigation.footer} tagline={data.site.footerTagline} />
-
-{#if import.meta.env.DEV}
-	{#await import('#lib/dev/FigmaOverlay.svelte') then { default: FigmaOverlay }}
-		<FigmaOverlay />
-	{/await}
-{/if}

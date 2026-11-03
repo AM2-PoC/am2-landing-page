@@ -11,8 +11,7 @@ const MIN_TARGET = 24;
 const PAGES = [
 	'/',
 	'/solutions/why-am2',
-	'/platforms/am2-ptt',
-	'/platforms/am2-command-center',
+	'/platforms/am2-ptt-command-center',
 	'/products/am2-ptt',
 	'/products/am2-command-center',
 	'/services/saas',
@@ -205,7 +204,7 @@ for (const width of WIDTHS) {
 			console.log(`✗ ${width}px ${path}: HTTP ${response?.status() ?? 'no response'}`);
 			continue;
 		}
-		await page.addStyleTag({ content: '[data-dev-tool] { display: none !important; }' });
+
 		await page.evaluate(() => document.fonts.ready);
 		await page.evaluate(async () => {
 			for (let y = 0; y < document.body.scrollHeight; y += window.innerHeight / 2) {

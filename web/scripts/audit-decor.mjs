@@ -6,8 +6,7 @@ const CLICK_WIDTHS = new Set([390, 768, 1280, 1920]);
 const PAGES = [
 	'/',
 	'/solutions/why-am2',
-	'/platforms/am2-ptt',
-	'/platforms/am2-command-center',
+	'/platforms/am2-ptt-command-center',
 	'/products/am2-ptt',
 	'/products/am2-command-center',
 	'/services/saas',
@@ -69,7 +68,7 @@ function inspect(checkClicks) {
 				rect.width > 1 &&
 				rect.height > 1 &&
 				getComputedStyle(el).visibility !== 'hidden' &&
-				!el.closest('[aria-hidden="true"], .sr-only, [data-dev-tool]')
+				!el.closest('[aria-hidden="true"], .sr-only')
 			);
 		});
 		for (const el of targets) {
