@@ -12,7 +12,7 @@
 <!-- contentWidth matches the card's max-w-256, so the decoration can use the space beside it.
      blend="none": one flat background colour, no fade from the section above.
      Light theme (Figma Home Light): a solid orange card with dark text and a light button. -->
-<Section {tone} blend="none" labelledby={headingId} contentWidth="64rem">
+<Section {tone} blend="none" labelledby={headingId} contentWidth="64rem" class="cta-section">
 	<div
 		class="rounded-card border-line bg-surface-subtle light:border-transparent light:bg-accent mx-auto max-w-256 border px-6 py-12 text-center sm:px-10 sm:py-14 lg:px-16 lg:py-16"
 	>

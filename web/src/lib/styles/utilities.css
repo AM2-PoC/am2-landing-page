@@ -42,6 +42,11 @@
 	--section-pad-top: calc(var(--spacing-section) / 3);
 }
 
+[data-section-tone='raised'] + [data-section-tone='raised'].cta-section {
+	padding-top: var(--spacing-section);
+	--section-pad-top: var(--spacing-section);
+}
+
 /* Photo hero in the light theme: the photo fades out over the last --hero-fade of the
    section, so the dark photo dissolves into the light page. The fade follows a smootherstep
    curve (17 stops): a plain linear fade starts and stops abruptly, which the eye sees as a
