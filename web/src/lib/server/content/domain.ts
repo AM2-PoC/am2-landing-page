@@ -16,18 +16,23 @@ export async function getProducts(platformId: number, locale: string): Promise<P
 				limit: -1
 			})
 		),
+		// The platform page of this platform, or the combined platform page (platform_id NULL)
+		// that presents AM² PTT and AM² Command Center together
 		directus.request(
 			readItems('pages', {
-				fields: ['path'],
+				fields: ['path', 'platform_id'],
 				filter: {
 					template: { _eq: 'platform' },
-					platform_id: { _eq: platformId },
-					is_published: { _eq: true }
+					is_published: { _eq: true },
+					_or: [{ platform_id: { _eq: platformId } }, { platform_id: { _null: true } }]
 				},
-				limit: 1
+				limit: 2
 			})
 		)
 	]);
+	const platformPage =
+		platformPages.find((p) => idOf(p.platform_id) === platformId) ??
+		platformPages.find((p) => idOf(p.platform_id) === null);
 	if (products.length === 0) return [];
 
 	const texts = await directus.request(
@@ -56,7 +61,7 @@ export async function getProducts(platformId: number, locale: string): Promise<P
 				name: text.name,
 				description: text.description,
 				image: toImageAsset(file, file ? (alts.get(file.id) ?? text.name) : ''),
-				platformHref: platformPages[0]?.path ?? null
+				platformHref: platformPage?.path ?? null
 			}
 		];
 	});

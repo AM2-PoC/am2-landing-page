@@ -1,10 +1,17 @@
-import { error } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import { getLocale } from '#lib/paraglide/runtime.js';
 import { getPage } from '#lib/server/content/pages.ts';
 import { isPagePath, toPagePath } from '#lib/server/content/page-path.ts';
+import { legacyRedirectTarget } from '#lib/server/legacy-redirects.ts';
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, url }) => {
+	// Old page URLs (e.g. the two former platform pages) move permanently to their
+	// replacement, so bookmarks, inbound links, and search results keep working.
+	// Done in load (not in hooks) so client-side navigations are redirected too.
+	const moved = legacyRedirectTarget(url);
+	if (moved) redirect(301, moved);
+
 	const path = toPagePath(params.path);
 
 	// A URL that can't be a page path never reaches Directus or the cache

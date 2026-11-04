@@ -5,21 +5,21 @@ test.describe('language switch', () => {
 	test.use({ viewport: { width: 1440, height: 900 } });
 
 	test('opens the same page in Indonesian and back in English', async ({ page }) => {
-		await page.goto('/platforms/am2-ptt');
+		await page.goto('/platforms/am2-ptt-command-center');
 		await page
 			.getByRole('banner')
 			.getByRole('link', { name: /Switch to Bahasa Indonesia/ })
 			.click();
 
-		await expect(page).toHaveURL('/id/platforms/am2-ptt');
+		await expect(page).toHaveURL('/id/platforms/am2-ptt-command-center');
 		await expect(page.locator('html')).toHaveAttribute('lang', 'id');
-		await expect(page).toHaveTitle(pageInfo('/platforms/am2-ptt').title.id);
+		await expect(page).toHaveTitle(pageInfo('/platforms/am2-ptt-command-center').title.id);
 
 		await page
 			.getByRole('banner')
 			.getByRole('link', { name: /Ganti ke English/ })
 			.click();
-		await expect(page).toHaveURL('/platforms/am2-ptt');
+		await expect(page).toHaveURL('/platforms/am2-ptt-command-center');
 		await expect(page.locator('html')).toHaveAttribute('lang', 'en');
 	});
 

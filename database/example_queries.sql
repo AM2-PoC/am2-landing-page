@@ -92,9 +92,15 @@ CROSS JOIN (SELECT code FROM locales WHERE is_default) dl
 JOIN products pr ON pr.platform_id = p.platform_id AND pr.is_active
 LEFT JOIN product_translations t ON t.product_id = pr.id AND t.locale_code = :'locale'
 LEFT JOIN product_translations d ON d.product_id = pr.id AND d.locale_code = dl.code
-LEFT JOIN pages platform_page    ON platform_page.platform_id = pr.platform_id
-                                AND platform_page.template = 'platform'
-                                AND platform_page.is_published
+LEFT JOIN LATERAL (
+    SELECT pp.path
+    FROM pages pp
+    WHERE pp.template = 'platform'
+      AND pp.is_published
+      AND (pp.platform_id = pr.platform_id OR pp.platform_id IS NULL)
+    ORDER BY (pp.platform_id = pr.platform_id) DESC, pp.id
+    LIMIT 1
+) platform_page ON true
 WHERE p.path = '/products/am2-ptt'
 ORDER BY pr.sort_order, pr.id;
 

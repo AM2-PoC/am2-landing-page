@@ -67,9 +67,9 @@ test.describe('desktop menu', () => {
 		const menu = page.getByRole('navigation', { name: 'Main navigation' });
 		await menu.getByRole('button', { name: 'Ecosystems' }).click();
 		await menu.getByRole('button', { name: 'Platforms' }).click();
-		await menu.getByRole('link', { name: 'AM² Command Center', exact: true }).click();
+		await menu.getByRole('link', { name: 'AM² PTT & Command Center', exact: true }).click();
 
-		await expect(page).toHaveURL('/platforms/am2-command-center');
+		await expect(page).toHaveURL('/platforms/am2-ptt-command-center');
 		await expect(menu.getByRole('button', { name: 'Ecosystems' })).toHaveAttribute(
 			'aria-expanded',
 			'false'

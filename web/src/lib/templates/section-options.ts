@@ -13,10 +13,14 @@ export const iconGridOptions: Record<
 
 export const cardGridOptions: Record<
 	string,
-	Tone & { variant?: 'feature' | 'banner' | 'tall'; columns?: 2 | 3 }
+	Tone & { variant?: 'feature' | 'banner' | 'tall'; columns?: 1 | 2 | 3 }
 > = {
-	home_platforms: { variant: 'feature' },
+	// Migration 11 reduces this section to one combined platform card.
+	home_platforms: { variant: 'feature', columns: 1 },
 	home_industries: { variant: 'banner' },
+	platform_combined_benefits: { variant: 'tall', columns: 3 },
+	platform_combined_devices: { variant: 'feature' },
+	// Former single-platform pages (unpublished by 10_combined_platform_page.sql, kept for rollback)
 	platform_ptt_benefits: { variant: 'tall', columns: 3 },
 	platform_cc_benefits: { variant: 'tall', columns: 3 },
 	about_what_we_do: { variant: 'banner', tone: 'raised' }
@@ -28,8 +32,18 @@ export const carouselOptions: Record<string, Tone & { variant?: 'peek' | 'single
 	solutions_capabilities: { variant: 'single' }
 };
 
-/** paged: features four at a time with arrows (Figma: Features pages); shorter lists show no arrows */
-export const splitListOptions: Record<string, Tone & { paged?: boolean }> = {
+/**
+ * paged: features four at a time with arrows (Figma: Features pages); shorter lists show no arrows.
+ * imagePosition: side of the photo for non-paged lists (default right)
+ */
+export const splitListOptions: Record<
+	string,
+	Tone & { paged?: boolean; imagePosition?: 'left' | 'right' }
+> = {
+	// Combined platform page: one section covers both platforms (12_combined_platform_capabilities.sql);
+	// platform_combined_command_center is hidden there and kept only for rollback
+	platform_combined_ptt: { imagePosition: 'right' },
+	platform_combined_command_center: { imagePosition: 'left' },
 	feature_ptt_app_list: { paged: true },
 	feature_ptt_webadmin_list: { paged: true },
 	feature_cc_app_list: { paged: true },
@@ -43,6 +57,5 @@ export const splitMediaOptions: Record<string, Tone & { imagePosition?: 'left' |
 
 export function heroVariant(template: PageTemplate): 'centered' | 'background' | 'media-pair' {
 	if (template === 'home') return 'centered';
-	if (template === 'about') return 'media-pair';
 	return 'background';
 }

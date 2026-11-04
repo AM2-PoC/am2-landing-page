@@ -45,7 +45,7 @@
 	<Button shape="card">Get in Touch (card)</Button>
 	<Button loading>Sending…</Button>
 	<Button disabled>Disabled</Button>
-	<ArrowLink href="/platforms/am2-ptt" label="Explore AM² PTT" />
+	<ArrowLink href="/platforms/am2-ptt-command-center" label="Explore AM² PTT & Command Center" />
 	<Eyebrow>Discuss your requirements</Eyebrow>
 </Container>
 
@@ -98,8 +98,8 @@
 {@render label('IconGridSection — feature + dividers (operational model)')}
 <IconGridSection section={sample.models} variant="feature" dividers />
 
-{@render label('CardGridSection — feature (platforms)')}
-<CardGridSection section={sample.platforms} variant="feature" />
+{@render label('CardGridSection — single combined platform card')}
+<CardGridSection section={sample.platforms} variant="feature" columns={1} />
 
 {@render label('CardGridSection — banner (industries)')}
 <CardGridSection section={sample.industries} variant="banner" />

@@ -8,7 +8,7 @@
 		section: SectionData;
 		tone?: SectionTone;
 		variant?: 'feature' | 'banner' | 'tall';
-		columns?: 2 | 3;
+		columns?: 1 | 2 | 3;
 	};
 	let { section, tone = 'canvas', variant = 'banner', columns = 2 }: Props = $props();
 
@@ -26,7 +26,11 @@
 		data-reveal-group
 		class={[
 			'gap-grid grid',
-			columns === 3 ? 'md:grid-cols-2 lg:grid-cols-3' : 'md:grid-cols-2',
+			columns === 3
+				? 'md:grid-cols-2 lg:grid-cols-3'
+				: columns === 2
+					? 'md:grid-cols-2'
+					: 'grid-cols-1',
 			(section.heading || section.body) && 'mt-intro'
 		]}
 	>

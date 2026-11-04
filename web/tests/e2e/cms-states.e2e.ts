@@ -50,11 +50,11 @@ test.describe('Directus is down', () => {
 	}
 
 	test('pages that were already loaded keep working from the cache', async ({ page, cms }) => {
-		expect((await page.goto('/platforms/am2-ptt'))?.status()).toBe(200);
+		expect((await page.goto('/platforms/am2-ptt-command-center'))?.status()).toBe(200);
 		await cms.outage(true);
 
-		expect((await page.goto('/platforms/am2-ptt'))?.status()).toBe(200);
-		await expect(page).toHaveTitle(pageInfo('/platforms/am2-ptt').title.en);
+		expect((await page.goto('/platforms/am2-ptt-command-center'))?.status()).toBe(200);
+		await expect(page).toHaveTitle(pageInfo('/platforms/am2-ptt-command-center').title.en);
 	});
 
 	test('the site recovers on its own once Directus is back (errors are not cached)', async ({

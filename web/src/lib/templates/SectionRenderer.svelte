@@ -50,11 +50,11 @@
 		<CarouselSection {section} {...carousel} />
 	{/if}
 {:else if section.type === 'split_list'}
-	{@const { paged, ...splitList } = splitListOptions[section.key] ?? {}}
+	{@const { paged, imagePosition, ...splitList } = splitListOptions[section.key] ?? {}}
 	{#if paged}
 		<PagedListSection {section} {...splitList} />
 	{:else}
-		<SplitListSection {section} {...splitList} />
+		<SplitListSection {section} {imagePosition} {...splitList} />
 	{/if}
 {:else if section.type === 'split_media'}
 	<SplitMediaSection {section} {...splitMediaOptions[section.key] ?? {}} />

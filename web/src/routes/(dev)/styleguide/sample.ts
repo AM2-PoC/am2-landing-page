@@ -103,23 +103,18 @@ export const platforms: SectionData = {
 	...empty,
 	key: 'sg_platforms',
 	type: 'card_grid',
-	heading: 'One Administration\nTwo Platforms for Field Operations',
-	highlight: 'Two Platforms for Field Operations',
+	heading: 'AM² PTT & Command Center,\nManaged from One Place',
+	highlight: 'Managed from One Place',
 	items: [
 		item(
 			1,
-			'AM² PTT',
-			'Connect push-to-talk channels, private communication, latest unit locations, optional video, presence, and access management.',
+			'AM² PTT & Command Center',
+			'Bring push-to-talk communication for field teams and body-camera visual workflows for supervisors into one operational platform, managed through WebAdmin.',
 			{
-				link: { href: '/platforms/am2-ptt', label: 'Explore AM² PTT' }
-			}
-		),
-		item(
-			2,
-			'AM² Command Center',
-			'Bring body cameras and visual workflows into one command environment for supervisors and administrators.',
-			{
-				link: { href: '/platforms/am2-command-center', label: 'Explore AM² Command Center' }
+				link: {
+					href: '/platforms/am2-ptt-command-center',
+					label: 'Explore AM² PTT & Command Center'
+				}
 			}
 		)
 	]
@@ -281,14 +276,14 @@ export const products: ProductData[] = [
 		description:
 			'Push-to-Talk over Cellular (PoC) devices for channel-based and private voice communication.',
 		image: null,
-		platformHref: '/platforms/am2-ptt'
+		platformHref: '/platforms/am2-ptt-command-center'
 	},
 	{
 		id: 2,
 		name: 'HT PoC Voice & Video + Maps',
 		description: 'PoC devices that add live video to voice and location capabilities.',
 		image: null,
-		platformHref: '/platforms/am2-ptt'
+		platformHref: '/platforms/am2-ptt-command-center'
 	}
 ];
 

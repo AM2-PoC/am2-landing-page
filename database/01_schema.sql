@@ -50,7 +50,7 @@ CREATE TABLE platforms (
     CONSTRAINT platforms_sort_order_chk  CHECK (sort_order >= 0)
 );
 
-COMMENT ON TABLE  platforms IS 'The two AM² platforms: AM² PTT and AM² Command Center. Used by the Platform/Product/Features pages and the "Product of Interest" option.';
+COMMENT ON TABLE  platforms IS 'The two AM² platforms: AM² PTT and AM² Command Center, presented together on one combined platform page (AM² PTT & Command Center). Used by the Product/Features pages and the "Product of Interest" option.';
 COMMENT ON COLUMN platforms.name IS 'Brand name, not translated (e.g. AM² PTT).';
 COMMENT ON COLUMN platforms.is_active IS 'FALSE = hidden from form options without breaking relations to existing leads.';
 
@@ -240,7 +240,13 @@ CREATE TABLE pages (
     CONSTRAINT pages_template_chk          CHECK (template IN ('home', 'solution', 'platform', 'product', 'service', 'feature', 'contact', 'about')),
     CONSTRAINT pages_path_chk              CHECK (path ~ '^/([a-z0-9]+(-[a-z0-9]+)*(/[a-z0-9]+(-[a-z0-9]+)*)*)?$'),
     CONSTRAINT pages_home_path_chk         CHECK ((template = 'home') = (path = '/')),
-    CONSTRAINT pages_platform_chk          CHECK ((template IN ('platform', 'product', 'feature')) = (platform_id IS NOT NULL)),
+    CONSTRAINT pages_platform_chk          CHECK (
+        CASE
+            WHEN template IN ('product', 'feature') THEN platform_id IS NOT NULL
+            WHEN template = 'platform'              THEN true
+            ELSE platform_id IS NULL
+        END
+    ),
     CONSTRAINT pages_deployment_model_chk  CHECK ((template = 'service') = (deployment_model_id IS NOT NULL)),
     CONSTRAINT pages_published_at_chk      CHECK (NOT is_published OR published_at IS NOT NULL)
 );
@@ -249,15 +255,17 @@ CREATE UNIQUE INDEX pages_singleton_template_uidx
     ON pages (template) WHERE template IN ('home', 'contact', 'about');
 CREATE UNIQUE INDEX pages_platform_template_uidx
     ON pages (platform_id, template) WHERE template IN ('platform', 'product');
+CREATE UNIQUE INDEX pages_combined_platform_uidx
+    ON pages (template) WHERE template = 'platform' AND platform_id IS NULL;
 CREATE UNIQUE INDEX pages_service_deployment_model_uidx
     ON pages (deployment_model_id) WHERE template = 'service';
 CREATE INDEX pages_platform_id_idx         ON pages (platform_id);
 CREATE INDEX pages_deployment_model_id_idx ON pages (deployment_model_id);
 
-COMMENT ON TABLE  pages IS 'The 14 landing page pages. Routing: path without a language prefix.';
-COMMENT ON COLUMN pages.path IS 'Path without a language prefix, e.g. /platforms/am2-ptt. Home = /.';
+COMMENT ON TABLE  pages IS 'Landing page pages. Routing: path without a language prefix.';
+COMMENT ON COLUMN pages.path IS 'Path without a language prefix, e.g. /platforms/am2-ptt-command-center. Home = /.';
 COMMENT ON COLUMN pages.template IS 'home | solution | platform | product | service | feature | contact | about.';
-COMMENT ON COLUMN pages.platform_id IS 'Required for the platform/product/feature templates.';
+COMMENT ON COLUMN pages.platform_id IS 'Required for the product/feature templates. Platform template: one page per platform, or NULL for the single combined AM² PTT & Command Center page.';
 COMMENT ON COLUMN pages.deployment_model_id IS 'Required for the service template (determines the responsibility_matrix content).';
 COMMENT ON COLUMN pages.is_published IS 'Only published pages are publicly accessible.';
 COMMENT ON COLUMN pages.published_at IS 'Must be set when is_published = true.';

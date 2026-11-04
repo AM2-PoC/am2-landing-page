@@ -73,7 +73,7 @@
 			"path": "/platforms/am2-command-center",
 			"template": "platform",
 			"platform_id": 2,
-			"is_published": true,
+			"is_published": false,
 			"published_at": "2026-10-30T20:11:56.969721+07:00",
 			"deployment_model_id": null
 		},
@@ -109,7 +109,7 @@
 			"path": "/platforms/am2-ptt",
 			"template": "platform",
 			"platform_id": 1,
-			"is_published": true,
+			"is_published": false,
 			"published_at": "2026-10-30T20:11:56.969721+07:00",
 			"deployment_model_id": null
 		},
@@ -138,6 +138,15 @@
 			"platform_id": 1,
 			"is_published": true,
 			"published_at": "2026-10-30T20:11:56.969721+07:00",
+			"deployment_model_id": null
+		},
+		{
+			"id": 15,
+			"path": "/platforms/am2-ptt-command-center",
+			"template": "platform",
+			"platform_id": null,
+			"is_published": true,
+			"published_at": "2026-11-02T12:00:00.000000+07:00",
 			"deployment_model_id": null
 		}
 	],
@@ -182,7 +191,7 @@
 			"title": "About AM² | Operational Communication for Field Teams",
 			"page_id": 6,
 			"locale_code": "en",
-			"meta_description": "AM² combines purpose-configured Android devices, two communication platforms, and flexible deployment for field teams."
+			"meta_description": "AM² combines purpose-configured Android devices, the AM² PTT & Command Center platform, and flexible deployment for field teams."
 		},
 		{
 			"id": 7,
@@ -336,7 +345,21 @@
 			"title": "Tentang AM² | Komunikasi Operasional untuk Tim Lapangan",
 			"page_id": 6,
 			"locale_code": "id",
-			"meta_description": "AM² memadukan perangkat Android yang dikonfigurasi khusus, dua platform komunikasi, dan deployment fleksibel untuk tim lapangan."
+			"meta_description": "AM² memadukan perangkat Android yang dikonfigurasi khusus, platform AM² PTT & Command Center, dan deployment fleksibel untuk tim lapangan."
+		},
+		{
+			"id": 43,
+			"title": "AM² PTT & Command Center | Field Communication & Visual Operations",
+			"page_id": 15,
+			"locale_code": "en",
+			"meta_description": "Push-to-talk for field teams and body-camera visual workflows for supervisors, managed through WebAdmin. Available as Managed SaaS or On-Premise."
+		},
+		{
+			"id": 44,
+			"title": "AM² PTT & Command Center | Komunikasi Lapangan & Operasi Visual",
+			"page_id": 15,
+			"locale_code": "id",
+			"meta_description": "Push-to-talk untuk tim lapangan dan alur kerja visual body camera untuk supervisor, dikelola melalui WebAdmin. Tersedia sebagai Managed SaaS atau On-Premise."
 		}
 	],
 	"navigation_items": [
@@ -430,7 +453,7 @@
 		},
 		{
 			"id": 12,
-			"page_id": 11,
+			"page_id": 15,
 			"parent_id": 11,
 			"is_visible": true,
 			"sort_order": 10,
@@ -440,7 +463,7 @@
 			"id": 13,
 			"page_id": 7,
 			"parent_id": 11,
-			"is_visible": true,
+			"is_visible": false,
 			"sort_order": 20,
 			"menu_location": "header"
 		},
@@ -526,7 +549,7 @@
 		},
 		{
 			"id": 24,
-			"page_id": 11,
+			"page_id": 15,
 			"parent_id": 23,
 			"is_visible": true,
 			"sort_order": 10,
@@ -642,7 +665,7 @@
 		},
 		{
 			"id": 12,
-			"label": "AM² PTT",
+			"label": "AM² PTT & Command Center",
 			"locale_code": "en",
 			"navigation_item_id": 12
 		},
@@ -816,7 +839,7 @@
 		},
 		{
 			"id": 53,
-			"label": "AM² PTT",
+			"label": "AM² PTT & Command Center",
 			"locale_code": "id",
 			"navigation_item_id": 12
 		},
@@ -1231,6 +1254,13 @@
 			"cta_page_id": null,
 			"section_key": "about_how_we_work",
 			"section_type": "process_steps"
+		},
+		{
+			"id": 45,
+			"image_id": "00000000-0000-4000-8000-00000000002b",
+			"cta_page_id": null,
+			"section_key": "platform_combined_hero",
+			"section_type": "hero"
 		}
 	],
 	"content_section_translations": [
@@ -1298,7 +1328,7 @@
 			"id": 7,
 			"body": null,
 			"eyebrow": null,
-			"heading": "Two Platforms,\nManaged from One Place",
+			"heading": "AM² PTT & Command Center,\nManaged from One Place",
 			"cta_label": null,
 			"locale_code": "en",
 			"heading_highlight": "Managed from One Place",
@@ -1678,7 +1708,7 @@
 			"id": 48,
 			"body": null,
 			"eyebrow": null,
-			"heading": "Dua Platform,\nDikelola dari Satu Tempat",
+			"heading": "AM² PTT & Command Center,\nDikelola dari Satu Tempat",
 			"cta_label": null,
 			"locale_code": "id",
 			"heading_highlight": "Dikelola dari Satu Tempat",
@@ -2073,6 +2103,26 @@
 			"locale_code": "id",
 			"heading_highlight": null,
 			"content_section_id": 44
+		},
+		{
+			"id": 127,
+			"body": "AM² PTT & Command Center brings push-to-talk for field teams and body-camera visual workflows for supervisors together, managed through WebAdmin.",
+			"eyebrow": null,
+			"heading": "One Platform for Field Voice and Visual Operations",
+			"cta_label": null,
+			"locale_code": "en",
+			"heading_highlight": "Field Voice and Visual Operations",
+			"content_section_id": 45
+		},
+		{
+			"id": 128,
+			"body": "AM² PTT & Command Center menyatukan push-to-talk untuk tim lapangan dan alur kerja visual body camera untuk supervisor, dikelola melalui WebAdmin.",
+			"eyebrow": null,
+			"heading": "Satu Platform untuk Komunikasi dan Operasi Visual Lapangan",
+			"cta_label": null,
+			"locale_code": "id",
+			"heading_highlight": "Komunikasi dan Operasi Visual Lapangan",
+			"content_section_id": 45
 		}
 	],
 	"page_content_sections": [
@@ -2432,6 +2482,41 @@
 			"is_visible": true,
 			"sort_order": 40,
 			"content_section_id": 2
+		},
+		{
+			"id": 52,
+			"page_id": 15,
+			"is_visible": true,
+			"sort_order": 10,
+			"content_section_id": 45
+		},
+		{
+			"id": 53,
+			"page_id": 15,
+			"is_visible": true,
+			"sort_order": 20,
+			"content_section_id": 20
+		},
+		{
+			"id": 54,
+			"page_id": 15,
+			"is_visible": true,
+			"sort_order": 30,
+			"content_section_id": 24
+		},
+		{
+			"id": 55,
+			"page_id": 15,
+			"is_visible": true,
+			"sort_order": 40,
+			"content_section_id": 21
+		},
+		{
+			"id": 56,
+			"page_id": 15,
+			"is_visible": true,
+			"sort_order": 50,
+			"content_section_id": 4
 		}
 	],
 	"section_items": [
@@ -2477,16 +2562,16 @@
 			"image_id": "00000000-0000-4000-8000-000000000001",
 			"is_visible": true,
 			"sort_order": 10,
-			"link_page_id": 11,
+			"link_page_id": 15,
 			"content_section_id": 9
 		},
 		{
 			"id": 6,
 			"icon_key": null,
 			"image_id": "00000000-0000-4000-8000-000000000002",
-			"is_visible": true,
+			"is_visible": false,
 			"sort_order": 20,
-			"link_page_id": 7,
+			"link_page_id": 15,
 			"content_section_id": 9
 		},
 		{
@@ -3254,9 +3339,9 @@
 		},
 		{
 			"id": 5,
-			"title": "AM² PTT",
-			"link_label": "Explore AM² PTT",
-			"description": "Push-to-talk channels, one-to-one voice, latest unit locations, presence, and optional video for teams on the move.",
+			"title": "AM² PTT & Command Center",
+			"link_label": "Explore AM² PTT & Command Center",
+			"description": "Bring push-to-talk communication for field teams and body-camera visual workflows for supervisors into one operational platform, managed through WebAdmin.",
 			"locale_code": "en",
 			"section_item_id": 5
 		},
@@ -3814,9 +3899,9 @@
 		},
 		{
 			"id": 80,
-			"title": "AM² PTT",
-			"link_label": "Pelajari AM² PTT",
-			"description": "Channel push-to-talk, komunikasi satu-ke-satu, lokasi terakhir unit, status online, dan video opsional untuk tim yang terus bergerak.",
+			"title": "AM² PTT & Command Center",
+			"link_label": "Pelajari AM² PTT & Command Center",
+			"description": "Satukan komunikasi push-to-talk untuk tim lapangan dan alur kerja visual body camera untuk supervisor dalam satu platform operasional, yang dikelola melalui WebAdmin.",
 			"locale_code": "id",
 			"section_item_id": 5
 		},

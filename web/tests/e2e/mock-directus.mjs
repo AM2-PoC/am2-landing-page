@@ -1,7 +1,7 @@
 // Mock Directus for the E2E tests: answers the REST reads the website makes
 // (GET /items/:collection with fields / filter / sort / limit) from a fixed snapshot of the
-// AM² content (tests/e2e/fixtures/content.json = 01_schema + 02_seed + 04–08, with fake
-// images), and serves placeholder images at /assets/:id. No real Directus, database or
+// AM² content (tests/e2e/fixtures/content.json = 01_schema + 02_seed + 04–08 +
+// 10_combined_platform_page, with fake images), and serves placeholder images at /assets/:id. No real Directus, database or
 // production data is touched, so every run sees exactly the same content.
 //
 // Test controls (only on this mock, used by tests/e2e/cms-states.e2e.ts):
