@@ -57,4 +57,11 @@
 	[data-section-blend='none'] {
 		background-image: none;
 	}
+
+	[data-theme='dark'] main > section[aria-labelledby='about_hero-heading'],
+	[data-theme='dark'] main > section[aria-labelledby='about_what_we_do-heading'],
+	[data-theme='dark'] main > section[aria-labelledby='about_how_we_work-heading'] {
+		background-color: #000000;
+		background-image: none;
+	}
 }
